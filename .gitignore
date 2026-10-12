@@ -1,0 +1,100 @@
+# ====================================================================
+# Sitemas Operativos y Editores (Visual Studio, VS Code, JetBrains)
+# ====================================================================
+# Visual Studio
+.vs/
+[Db]b/
+*.vshost.exe
+*.vshost.exe.manifest
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, IntelliJ, WebStorm)
+.idea/
+*.iws
+*.iml
+
+# Sistemas Operativos
+.DS_Store
+Thumbs.db
+
+# ====================================================================
+# Python (Entornos virtuales, caché y compilados)
+# ====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales (Nombres comunes)
+.venv/
+venv/
+ENV/
+env/
+pythonenv/
+
+# Cobertura de pruebas y reportes
+.target/
+.pytest_cache/
+.htmlcov/
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# ====================================================================
+# Microservicios y Contenedores (Docker)
+# ====================================================================
+# Ignorar almacenamiento local de datos/bases de datos en contenedores
+.docker/
+docker/volumes/
+data/
+db_data/
+postgres-data/
+
+# Archivos de logs de microservicios
+logs/
+*.log
+*.pid
+
+# ====================================================================
+# Seguridad y Variables de Entorno (¡CRÍTICO!)
+# ====================================================================
+# Nunca subir credenciales al repositorio remoto
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.secret

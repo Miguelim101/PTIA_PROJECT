@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mockups SIDP - Flujo Estricto de Clasificación (V3.0)</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 50px;
+            color: #333;
+        }
+        .device {
+            width: 320px;
+            height: 570px;
+            background-color: #f8f9fa;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+            border: 8px solid #212529;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow-y: auto; 
+            overflow-x: hidden;
+        }
+        .device::-webkit-scrollbar { width: 0px; background: transparent; }
+        
+        .header {
+            background-color: #1a233a;
+            color: #ffffff;
+            padding: 20px 15px 15px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 15px;
+        }
+        .section-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #6c757d;
+            font-weight: 700;
+            margin-bottom: -5px;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 12px 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            border-left: 4px solid #ced4da;
+            font-size: 0.9rem;
+        }
+        
+        .data-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .data-item { font-size: 0.75rem; display: flex; flex-direction: column; }
+        .data-label { color: #6c757d; font-weight: 600; margin-bottom: 2px; }
+        .data-value { font-weight: 700; color: #212529; font-size: 0.9rem; }
+
+        .btn {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 10px rgba(13, 110, 253, 0.3);
+            cursor: pointer;
+        }
+        .btn.secondary { background-color: #6c757d; box-shadow: 0 4px 10px rgba(108, 117, 125, 0.3); }
+        .btn.success { background-color: #198754; box-shadow: 0 4px 10px rgba(25, 135, 84, 0.3); }
+        
+        .ellipsis-container { text-align: center; margin: 10px 0; }
+        .ellipsis-dots { color: #adb5bd; font-weight: bold; font-size: 1.2rem; letter-spacing: 3px; }
+        .ellipsis-text { font-size: 0.7rem; color: #6c757d; margin-top: 2px; }
+
+        .drop-zone { border: 2px dashed #adb5bd; border-radius: 10px; padding: 20px; text-align: center; background: #f8f9fa; margin-top: 5px; margin-bottom: 15px; cursor: pointer; transition: background 0.3s;}
+        .drop-zone:hover { background: #e9ecef; }
+
+        .processing-view { justify-content: center; align-items: center; text-align: center; height: 100%; }
+        .spinner { width: 60px; height: 60px; border: 5px solid #e9ecef; border-top-color: #0d6efd; border-radius: 50%; margin-bottom: 20px; animation: spin 1s linear infinite; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        
+        .alert-box { background-color: #fff5f5; border: 2px solid #dc3545; border-radius: 10px; padding: 20px; text-align: center; }
+        .alert-title { color: #dc3545; font-weight: 800; font-size: 1.2rem; margin-bottom: 5px; }
+        .alert-metric { font-size: 2rem; font-weight: 900; color: #212529; }
+        
+        /* Estilos específicos para la vista masiva */
+        .stats-row { display: flex; justify-content: space-between; gap: 10px; margin-top: 5px; }
+        .stat-box { flex: 1; background: #fff; padding: 10px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .stat-number { font-size: 1.4rem; font-weight: 800; margin-top: 5px; }
+        .danger-text { color: #dc3545; }
+        
+        .threat-list { display: flex; flex-direction: column; gap: 8px; }
+        .threat-item { background: #fff; border-left: 4px solid #dc3545; padding: 10px; border-radius: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center; }
+        .threat-info { display: flex; flex-direction: column; }
+        .threat-domain { font-weight: 700; font-size: 0.8rem; color: #212529; }
+        .threat-id { font-size: 0.7rem; color: #6c757d; }
+        .threat-badge { background: #212529; color: white; padding: 3px 6px; border-radius: 4px; font-size: 0.65rem; font-weight: bold; letter-spacing: 0.5px; }
+    </style>
+</head>
+<body>
+
+    <!-- PANTALLA 1: ENTRADA DE DATOS -->
+    <div class="device">
+        <div class="header">SIDP Fuente de Datos</div>
+        <div class="content">
+            <div class="section-title">Análisis Singular</div>
+            <div class="drop-zone" style="margin-top: 5px;">
+                <div style="font-size: 2rem;">📧</div>
+                <div style="font-weight: 700; font-size: 0.9rem; margin-top: 5px; color: #212529;">Cargar Archivo .EML</div>
+                <div style="font-size: 0.75rem; color: #6c757d; margin-bottom: 10px;">Arrastra un correo crudo aquí</div>
+                <div class="btn" style="padding: 8px; font-size: 0.75rem;">Seleccionar Archivo</div>
+            </div>
+
+            <div class="section-title" style="margin-top: 10px;">Análisis Masivo (Por Lotes)</div>
+            <div class="drop-zone" style="margin-top: 5px;">
+                <div style="font-size: 2rem;">🗂️</div>
+                <div style="font-weight: 700; font-size: 0.9rem; margin-top: 5px; color: #212529;">Cargar Archivo .ZIP</div>
+                <div style="font-size: 0.75rem; color: #6c757d; margin-bottom: 10px;">Lote comprimido de archivos .eml</div>
+                <div class="btn secondary" style="padding: 8px; font-size: 0.75rem;">Procesar Lote</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA 2: PROCESAMIENTO -->
+    <div class="device">
+        <div class="header">SIDP Procesamiento</div>
+        <div class="content processing-view">
+            <div class="spinner"></div>
+            <h3 style="margin-bottom: 10px; color: #212529;">Extrayendo Características</h3>
+            <p style="color: #6c757d; font-size: 0.9rem; line-height: 1.4;">
+                Normalizando vector y ejecutando inferencia en <strong>Red Neuronal (MLP)</strong>...
+            </p>
+        </div>
+    </div>
+
+    <!-- PANTALLA 3: SALIDA SINGULAR -->
+    <div class="device">
+        <div class="header">SIDP Resultado (Singular)</div>
+        <div class="content">
+            <div class="section-title">Reporte de Amenaza</div>
+            <div class="alert-box">
+                <div class="alert-title">¡PHISHING DETECTADO!</div>
+                <div style="color: #6c757d; font-size: 0.85rem; margin-top: 10px;">Score de Riesgo (Sigmoid)</div>
+                <div class="alert-metric">94.7%</div>
+            </div>
+            
+            <div class="data-grid" style="margin-top: 5px;">
+                <div class="data-item">
+                    <span class="data-label">Archivo Analizado</span>
+                    <span class="data-value" style="font-size: 0.8rem;">alerta_bancolombia.eml</span>
+                </div>
+                <div class="data-item">
+                    <span class="data-label">Tiempo de Resp.</span>
+                    <span class="data-value">0.12s</span>
+                </div>
+            </div>
+
+            <div style="margin-top: auto;">
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <div style="font-weight: 700; color: #6c757d; font-size: 0.8rem; text-transform: uppercase;">Clasificación Finalizada</div>
+                    <div style="font-size: 0.75rem; color: #adb5bd; margin-top: 3px;">28 métricas extraídas exitosamente</div>
+                </div>
+                <div class="btn success" style="padding: 12px; font-size: 0.85rem; width: 100%;">Descargar Matriz Resultante (.CSV)</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PANTALLA 4: SALIDA MASIVA -->
+    <div class="device">
+        <div class="header">SIDP Resultado (Masivo)</div>
+        <div class="content">
+            <div class="section-title">Resumen de Lote</div>
+            
+            <div class="stats-row">
+                <div class="stat-box">
+                    <div class="data-label">Procesados</div>
+                    <div class="stat-number">2,540</div>
+                </div>
+                <div class="stat-box">
+                    <div class="data-label">Phishing</div>
+                    <div class="stat-number danger-text">412</div>
+                </div>
+            </div>
+
+            <div class="section-title" style="margin-top: 10px;">Alertas Prioritarias</div>
+            <div class="threat-list">
+                <div class="threat-item">
+                    <div class="threat-info">
+                        <span class="threat-domain">factura_1042.eml</span>
+                        <span class="threat-id">Score: 0.992 | Detección Crítica</span>
+                    </div>
+                    <div class="threat-badge">PHISHING</div>
+                </div>
+                <div class="threat-item">
+                    <div class="threat-info">
+                        <span class="threat-domain">soporte_1875.eml</span>
+                        <span class="threat-id">Score: 0.965 | Detección Crítica</span>
+                    </div>
+                    <div class="threat-badge">PHISHING</div>
+                </div>
+                <div class="threat-item">
+                    <div class="threat-info">
+                        <span class="threat-domain">pago_dian_2109.eml</span>
+                        <span class="threat-id">Score: 0.941 | Detección Crítica</span>
+                    </div>
+                    <div class="threat-badge">PHISHING</div>
+                </div>
+            </div>
+            
+            <div class="ellipsis-container" style="margin: 0;">
+                <div class="ellipsis-text">409 correos adicionales clasificados como phishing</div>
+            </div>
+
+            <div style="margin-top: auto;">
+                <div style="text-align: center; margin-bottom: 15px;">
+                    <div style="font-weight: 700; color: #6c757d; font-size: 0.8rem; text-transform: uppercase;">Procesamiento Concurrente Finalizado</div>
+                </div>
+                <div class="btn success" style="padding: 12px; font-size: 0.85rem; width: 100%;">Exportar Dataset Etiquetado (.CSV)</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
