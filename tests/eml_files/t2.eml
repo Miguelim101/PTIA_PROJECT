@@ -1,0 +1,1851 @@
+Received: from CH3PR01MB431911.prod.exchangelabs.com (2603:10b6:610:365::20)
+ by DS4PR01MB903402.prod.exchangelabs.com with HTTPS; Sun, 11 Oct 2026
+ 16:36:00 +0000
+Received: from BN9P222CA0003.NAMP222.PROD.OUTLOOK.COM (2603:10b6:408:10c::8)
+ by CH3PR01MB431911.prod.exchangelabs.com (2603:10b6:610:365::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.21.496.21; Sun, 11 Oct
+ 2026 16:35:30 +0000
+Received: from BN3PEPF0000B074.namprd04.prod.outlook.com
+ (2603:10b6:408:10c:cafe::5f) by BN9P222CA0003.outlook.office365.com
+ (2603:10b6:408:10c::8) with Microsoft SMTP Server (version=TLS1_3,
+ cipher=TLS_AES_256_GCM_SHA384) id 15.21.496.5 via Frontend Transport; Sun, 11
+ Oct 2026 16:35:29 +0000
+Authentication-Results: mx.microsoft.com 1; spf=pass (sender IP is
+ 149.72.30.156) smtp.mailfrom=em.ecomm.lenovo.com; dkim=pass (signature was
+ verified) header.d=ecomm.lenovo.com;dmarc=pass action=none
+ header.from=ecomm.lenovo.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of em.ecomm.lenovo.com
+ designates 149.72.30.156 as permitted sender)
+ receiver=protection.outlook.com; client-ip=149.72.30.156;
+ helo=o943.ecomm.lenovo.com; pr=C
+Received: from o943.ecomm.lenovo.com (149.72.30.156) by
+ BN3PEPF0000B074.mail.protection.outlook.com (10.167.243.119) with Microsoft
+ SMTP Server (version=TLS1_3, cipher=TLS_AES_256_GCM_SHA384) id 15.21.522.6
+ via Frontend Transport; Sun, 11 Oct 2026 16:35:29 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=ecomm.lenovo.com;
+	h=content-transfer-encoding:content-type:date:from:mime-version:subject:
+	reply-to:list-unsubscribe:list-unsubscribe-post:to:cc:content-type:date:from:
+	subject:to;
+	s=s1; t=1791736528;
+	bh=rRLqKRn9kKCIUeeh/ah7zmP856YZtRMdsU9Q4Ms3QO8=;
+	b=KxuJUaHHe2gUhC4i7Wgb+NRDt8Ms/nJDMGwMY7AUPgPQszlkJClwm5O0UIJsXyD9U029
+	lwfQGmwal+qMBUgvV5EL18fsy8yRFLnBPjocf3Ee2jrtM/rWOwf93eAcScLk8l9xCwZg2V
+	AIKBw4xRpbRtTjAVKMtr5Cj1xBVSSmGZeKhKjwCoB6SWKlkM29r1xauS9PzEWLFtfpcHK7
+	Ixw9b0wvNU3dIM45nHN5hxroh4B7pQJDSBpXASd4FT5joFVeqzu/TKjoyXBx+b3wPmsSWF
+	z0OvZOC1zNoOpAsu1xym3yuMQpf/7N/MoOakYUdE5fy3VYkEnyN7/sMCKiWAgWQw==
+Received: by recvd-5fbf9c6c9f-4kz4c with SMTP id recvd-5fbf9c6c9f-4kz4c-1-6ACBBAD0-24
+	2026-10-11 16:35:28.670946931 +0000 UTC m=+1035333.169914500
+Received: from MjQ3Nzk4NTM (unknown)
+	by geopod-ismtpd-6 (SG) with HTTP
+	id rNSOEm1SSaKqKvtVCA5PXA
+	Sun, 11 Oct 2026 16:35:28.660 +0000 (UTC)
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset=us-ascii
+Date: Sun, 11 Oct 2026 16:35:28 +0000 (UTC)
+From: Lenovo Colombia <lenovo@ecomm.lenovo.com>
+Message-ID: <rNSOEm1SSaKqKvtVCA5PXA@geopod-ismtpd-6>
+Subject: =?UTF-8?B?w5psdGltYXM=?= horas de Weekend Sale =?UTF-8?B?8J+aqA==?=
+Reply-To: donotreply@ecomm.lenovo.com
+List-Unsubscribe: <https://trk.ecomm.lenovo.com/lu/unsubscribe?oc=u001.P7TdCefzPKxkwAjLU8X1Vl4IXCaLv5OshOfQ5SsgCUBNAHiqUQ1QyWH4WcVPQ5PmaOmg19nTaX7bzRHf75zlOYiI9ubIRMdUmGS6_jAzoFtTa5J1RhA3_CVLVi79f85c17WZ2M-UgmifAiwoivbSD3omOYjFHE6RAFlBp0umnzkSUT_Ho23mPcllRc_J_LPE39aCXWoX9tSmm7b9HnkfPw>,
+ <mailto:unsubscribe@em.ecomm.lenovo.com?subject=https://trk.ecomm.lenovo.com/ss/su/u001.9cUcRvApcbiFNLhpa8Tymg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/um/h001.WFKrwO8yYqpMqaQ90uvGjIFR0icNJtiqk3FYaAb9RNQ>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-SG-EID: =?us-ascii?Q?u001=2ERI5dfRFcJIBPYAIMF0l9TByiSnT+Igzk0vDaIK3C3lHPcXL74=2FELti5+1?=
+ =?us-ascii?Q?zyuCxkq77uWYPEtU8mWzWHhpTiITX+cFuLUZGfB?=
+ =?us-ascii?Q?9TKAMkwkGi+UU3LwG=2F+KUqAG3ccvPGyf5I7VljZ?=
+ =?us-ascii?Q?8HLZYNMHIa8+tpTBSfRDUt0QTd319EHq1yJNZmP?=
+ =?us-ascii?Q?exkDngM9fwZp6BRotL8ACFIsnLea1qqJNXBhp+y?=
+ =?us-ascii?Q?5fQzHT0hZ=2FGyIPYJIF0qH4Rqipbbm7U9oBoTgJy?=
+ =?us-ascii?Q?Gogqi9VngwJSgJ1BUu+T0AsWUw=3D=3D?=
+X-SG-ID: =?us-ascii?Q?u001=2ESdBcvi+Evd=2FbQef8eZF3BpTL9BgbK5wfSJMJGMsmprD=2FW4b5sviujAufL?=
+ =?us-ascii?Q?tb5gDYzDWPVqNEMJsFdDezHzvthpPFc=2F18gohIs?=
+ =?us-ascii?Q?VbsYD7x9DqvcMxT8oGEnl=2FhqN7OcW37YKPV1Ze8?=
+ =?us-ascii?Q?=2F7lcKn+xUGmqMkXfQ8pFyquJDW+oh0CSsLE8M1x?=
+ =?us-ascii?Q?zaWn8E0hI7gOxbZo7dQfBv3CLwUTqew1v8mRz0m?=
+ =?us-ascii?Q?q32auQuZ3hs6oVNOjqsgl3mvJVJkrYSUA4zTydc?=
+ =?us-ascii?Q?snewbbPSCBS9tF2ol7Xyn1yk37oWoxcBniV4dCS?=
+ =?us-ascii?Q?w99o24S2gCIJZ8WClzOrjD9rZJBNY3dFXLpik19?=
+ =?us-ascii?Q?7nfx24XrQbAUM5CBzFssWFKT35tO=2FWa1uRxNmdA?=
+ =?us-ascii?Q?eYG+fiINyks2D2a9=2F7yFWdZG73py9YnhjOAYuJq?=
+ =?us-ascii?Q?cBqvkGU9157h229ou7tJwkRahn1WmGMH7k0ofZP?=
+ =?us-ascii?Q?1jzIckOga2lH6+G50V0wjbaAOoXvYtpctYN+9XE?=
+ =?us-ascii?Q?n2llw9aLPePTcriiyMdJiR2QrzwhTwzh8nYp6nh?=
+ =?us-ascii?Q?ToGlnlck9AtFImTcruM+TYcII5SY55r0D0mUUuv?=
+ =?us-ascii?Q?qRIXzxJ0xANx69hTPnGn6q3bINPYG=2FCY1AAL5vv?=
+ =?us-ascii?Q?SxAcvwwBIeCC+j0LUZOfoO4uzkSV0UhFeTMgF?=
+To: miguel.acero-l@mail.escuelaing.edu.co
+X-Entity-ID: u001.5OZRgBQlP7lphlaXU5+Eww==
+Return-Path: bounces+24779853-6d04-miguel.acero-l=mail.escuelaing.edu.co@em.ecomm.lenovo.com
+X-MS-Exchange-Organization-ExpirationStartTime: 11 Oct 2026 16:35:29.3739
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id: 2bb71fa8-0cc6-461c-6ec2-08df27b5a95a
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 50640584-2a40-4216-a84b-9b3ee0f3f6cf:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic: BN3PEPF0000B074:EE_|CH3PR01MB431911:EE_|DS4PR01MB903402:EE_
+X-MS-Exchange-Organization-AuthSource: BN3PEPF0000B074.namprd04.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 2bb71fa8-0cc6-461c-6ec2-08df27b5a95a
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-MS-Exchange-Organization-BulkCategory: Promotions
+X-Microsoft-Antispam: BCL:3;ARA:13230040|704161211799003|12012899012|3092899012|3072899012|29132699027|2092899012|69100299015|13102899012|5062899012|1032899013|260918224100599003|260918215300599003|13012899012|4092899012|39142699007|31052699007|3109299003|7049299003|5082899009|7149299003|4022899009|5063699009|11063799006|260925090831099003|10067099003|16102099003|21082099003|18002099003|55112099003|57112099003|19002099009|8096899003|2066899003;
+X-Forefront-Antispam-Report: CIP:149.72.30.156;CTRY:US;LANG:es;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:o943.ecomm.lenovo.com;PTR:o943.ecomm.lenovo.com;CAT:NONE;SFS:(13230040)(704161211799003)(12012899012)(3092899012)(3072899012)(29132699027)(2092899012)(69100299015)(13102899012)(5062899012)(1032899013)(260918224100599003)(260918215300599003)(13012899012)(4092899012)(39142699007)(31052699007)(3109299003)(7049299003)(5082899009)(7149299003)(4022899009)(5063699009)(11063799006)(260925090831099003)(10067099003)(16102099003)(21082099003)(18002099003)(55112099003)(57112099003)(19002099009)(8096899003)(2066899003);DIR:INB;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 11 Oct 2026 16:35:29.2688
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 2bb71fa8-0cc6-461c-6ec2-08df27b5a95a
+X-MS-Exchange-CrossTenant-Id: 50640584-2a40-4216-a84b-9b3ee0f3f6cf
+X-MS-Exchange-CrossTenant-AuthSource: BN3PEPF0000B074.namprd04.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: CH3PR01MB431911
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:31.4643090
+X-MS-Exchange-Processed-By-BccFoldering: 15.21.0496.018
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910005)(944490095)(944506478)(944626604)(920097)(930201)(20251009284)(140003);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?MlVXMGNCZStvN0s5NzdQZGYzM3UzRC95cjM5ZFdFbElnQ3d3amdBVmtDOTVL?=
+ =?utf-8?B?WkZnbnc5YXQvS2xMekZlb29BQ0VSZ3hCQncxUkdGaU1EVGU0UkJlNXMrdmFB?=
+ =?utf-8?B?Nm1vNjNMVXZ4eXlkK0VERXBudS90Q3AzOGRVbXhTT21EWHlGeHVKdThISWc0?=
+ =?utf-8?B?UHI5L3ZRVFc4dHpxcjV3NDVaSC9ER2NXTkdJQjNGUzFwZ0REanNZdmtNRHVN?=
+ =?utf-8?B?dmRJYnpSTWR3RlpWTXlyKzJGSU5wc0FQZ1I5V0xzbS9BeWowSW4wQjZoeEU3?=
+ =?utf-8?B?bWdYNVlOY3UvZFVKVExkVmlpeFh6R0NzZENlRXRBUm82L004WkRCeGhab05K?=
+ =?utf-8?B?bVJReWtwVGN6TC9sM1hicHlhNTVmV0tYT3pGUnBldHlvK2ZJL2ptK0tXSGJC?=
+ =?utf-8?B?eHU1b01mZzZWaFJ3cVZnVHpjRElydFhaalJ5dnMvTmNVTHZkcU1KbWJSZkVU?=
+ =?utf-8?B?WUZMSXNKWkcwUk5UV29PYnB2alRrUnBXaWh4YnpNTDBRbVpkZGdVRmJrR0JX?=
+ =?utf-8?B?bURlcjFnYmJkWE9ub3NqMUZ6d3BmYUlHeGF4aEpDY1ZEaitPV1lkSlk2d3pr?=
+ =?utf-8?B?R2FvQW5TZUhXL1dhUGMvTGxDL3BaaTZUUmlEQnRzVlFxYXZUb2djZ200bVN5?=
+ =?utf-8?B?L0JKS2RsUG5GZUowTkxabVZUb3BCeWx1NEtDeDBzQThIU21DNmhXaU1pekFJ?=
+ =?utf-8?B?UEVrUHBoSU56WkdCZDZRdStJRmFtNXV3bmF5VllvekVZYU8rVENWZkI1SlFh?=
+ =?utf-8?B?SUNmS092VUFjYmFFQ2l2S3phT2c3a2NLaklJQ0dTeDV0WEk0TmZDRXVvTnMz?=
+ =?utf-8?B?QVF5NSs1b0VicmVnS2xEZEp3cHJoRVlEREplZDNKSTBUQWY4c3RFdU10dDBK?=
+ =?utf-8?B?M0kwU01wMGdsMzM5TkVMdWt4dkFNbFZwcGEwTEhobjd2LzcwcnFocFhGaFVw?=
+ =?utf-8?B?UGxLMThNT1Z2T2trNE5xd0NKS0FQSDRVN1NhRDFnU0RSOEVFSVFDbW8xOEJU?=
+ =?utf-8?B?R2VFYlpjeVNvZms4ZFpIYXFYLy9FQkdqQlg0cHlFcHFKYzlwYUNYK1AzSnJG?=
+ =?utf-8?B?VDdEWUUvRzNqL3E5ZXlRdVE1S0ZrMCtNcGNjeXQ1anRoQVRoOThEVnVCNjRQ?=
+ =?utf-8?B?bHdUN3owRC9ZSy9HMkJkOFpwcUtaMVc3bjFNOHE1MkFNdkdDUGoyanY5OWxl?=
+ =?utf-8?B?cmQvY0ZIZ2Rab09rVDZlUml2MVI0VmJkb3RlTS90Ym50V3VTLzBvaDhacW1Y?=
+ =?utf-8?B?Nmt2QUFsRWMrR0d3SndiUm9yanBMWVZ6L1hZYVAveGxMazBJaGlzQ1V0emFK?=
+ =?utf-8?B?L0pDMzJpaDZuWHVINHJ1QllBZTY3MHdxRVFqUXdXVFZtTTExcnZQYnV0UUJC?=
+ =?utf-8?B?L3o2eEhLQlU1YmNrU0JFNE5WcHZmeE1TVnlia2E4dkhsdXJrNXJOdmgwWGRF?=
+ =?utf-8?B?WVVZSWxFNVBCdG9EcEo2V0IvZlZkZTdTNldnMm56Sk92VnFPN2FFY0R5K2NG?=
+ =?utf-8?B?NGR5K1QrQlg0a3BkeSs0NjlreHdXaW9CcGVEbFVjd2JzOEVoN3dOVjA5VzFm?=
+ =?utf-8?B?SDhzT1Z4KzJ5RnNkdHM3RHRlcFhnd0ZqWDNlMnJQUWNkQ3QyQXlERy8xdFlE?=
+ =?utf-8?B?Wnl0YU8yOWF5YjFQVnUxdGlTS2Z0MzJiMHJkTG1wakd0NnVtYnpCRFJkR0gy?=
+ =?utf-8?B?UzRZOHJqVDJGemp5VGNST1dLNjExM0hCTFFBQ2RDTXVtOHdVZWRrcTFnam16?=
+ =?utf-8?B?RjBEN3M3aEhxYlNpMkM0UCtDWlVBQ001NXdGRTFGdmE4SEc1ODZuSWVKVWhR?=
+ =?utf-8?B?ajhTOGN0UXdlVS9STThHSGV0Y1YxU0wzbXhyRHVMbEpMUng3VlpreUsrc2VS?=
+ =?utf-8?B?S0tDdmtyN2c2akIwbENsMmJ3a3Q2TmlwcjNrY3FRTmdka0ozeC9LdUJwRmNy?=
+ =?utf-8?B?cGhFamJnTXBWQ3pmYVdramovVDV0SGVuOXIwamxvZGJGbldrVWRIQUpKQkpE?=
+ =?utf-8?B?c1krSXgvTUlqcENINEI0aWdmOTNKTjZvSy84SUxyaytvbXZkTnBiYjlpWUJR?=
+ =?utf-8?B?MEVTNkVneTVHOGlhU0lYaUdCNDFlbjdpOGdkMGRtU0FkK0Foa3BKRUw4a0pG?=
+ =?utf-8?B?dm8wVGFySVJwZGxZS0FvRFlGallzYm9uUlNhWW9BbTNiZ0tNdjdMRjlEamhK?=
+ =?utf-8?B?MG9SNFdneWxzazd1emRHbEhTY2gvZUNkRHlWV1B2UTN4UjdNbWkxc2lzb2Nk?=
+ =?utf-8?B?YUhqV0UzOW9zUDBUNFlBRTkveHh1Y3hqTW1Ha2lXOE84L2NuZ1V5L2p3M3lX?=
+ =?utf-8?B?enFqSXNiMjBHV3pTWk4vTStabWp6RktnRjl2T1c1cUJ5VUFCRFVPdjBTb1RJ?=
+ =?utf-8?B?VTdKNzNiV3JNeS9qS0UzT2xnTTJObi83R2Y1Nm1Bc1kzS0tkR0dYalAwazN6?=
+ =?utf-8?B?UE9xakVIRXRraUZHN25XRUJBMWs0SHhtZ1EzZ3NZeEU4N0Z3Si91QVVGeURX?=
+ =?utf-8?B?WG1EeFEwVTZwQ1BOK3I0b0F0dkJuUnlyUEFsdHI0VWcyeC9PK0JEWmpzUGRS?=
+ =?utf-8?B?cnFua01VdFpmbmU1bitVSi9zZ1VYK3pyYnF3L0xoa2RxMjQwMFFib1FZTlRX?=
+ =?utf-8?B?Vk5Gd0dYQ1lyT3ZrNkdLb0xWRFBwMFBoc2l1dUZSV3VRWFZJWFNtQVQ5VWFY?=
+ =?utf-8?B?Z0dHUnlPbFNVaWhzT3owbkMxTURPcXU0dWpYOElPdCtRTGVVdGQrNU1zcHJy?=
+ =?utf-8?B?MnozbDRjU29DbWRQSFJXeW1xejFZM3VNTTdJRG5jaUhtV3RXUmt0Y2NiaW55?=
+ =?utf-8?B?WDJBSm1qd3NRNURQSXppb0RBOGttSm8zT3Bvb0xRSlFuTWRFdGVBV2EzT2kx?=
+ =?utf-8?B?UjBtUGx5K0hXL2c4UG54SGw3WVNLTk9nK2JIYldvUXY1UlB2Wkk4K2JJMzVG?=
+ =?utf-8?B?MTBuMXpWQ09CU3F3b3dOZTFDS05ZM0VDZkpTMUJZY3NUUkp6Wk4vTUVZcDRC?=
+ =?utf-8?B?MENaSzhLUXc2anFWdEdDb21PSmFVeTc4UE8xajJSY2FRYnVHOXZjMG1MUVZP?=
+ =?utf-8?B?bFh5Mk9IYjNYSGplaEJ3d0ZXZzdnQ1dFY0wvay80T2NpVG51bTVuRjhTVjdW?=
+ =?utf-8?B?UDJ4enp1azBwbVhka0FzY2prMHlaM3lXQlhRZDZNV1k1SjgxNFAwdHZnQTkv?=
+ =?utf-8?B?Y0RRekRFWFllUG9jVXJnZUxVTU4vZXVCK0ZSL3VobkhFWHc5eEJBYVpTZnhW?=
+ =?utf-8?B?Y3J5eDE2VW51MGJUM0wyNi84SjUwRjhIR0xTcjdqbk9YMGtpZTlyZ2VCRS8x?=
+ =?utf-8?B?azVnOXdmVHZqZk0zNFJVbzhIcEczbC9ub0t3V1Jqb2h1a21uaGROZEViazYx?=
+ =?utf-8?Q?fn7FHufShlGdV9ClJxd6o?=
+MIME-Version: 1.0
+
+<!DOCTYPE html><html><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
+><meta name=3D"viewport" content=3D"width=3Ddevice-width">
+
+<meta name=3D"format-detection" content=3D"telephone=3Dno">
+<title>&Uacute;ltimas horas de Weekend Sale &#128680;</title>
+<link rel=3D"stylesheet" href=3D"https://partner-fonts.bluecore.com/lenovo_=
+co/lenovo_co_fonts_1719313268.css">
+<style type=3D"text/css" media=3D"only screen and (max-width: 600px)">@medi=
+a screen and (max-width: 600px) {div,p,a,li,span,td { -webkit-text-size-adj=
+ust:none !important; }.flex-image {width: 100% !important;height: auto !imp=
+ortant;}.flex-button {max-width:600px !important;width:100% !important;}.fl=
+ex-button a {display: block !important;font-size: 18px !important;}.mobile-=
+hide { display: none !important; }.desktop-hide {display: block !important;=
+max-height: none !important;overflow: visible !important;float: none !impor=
+tant;font-size: 12px !important;line-height: 1.5 !important;}.display-table=
+ { display: table !important; }table.desktop-hide {display: table !importan=
+t;}tr.desktop-hide {display: table-row !important;}.desktop-hide td,td.desk=
+top-hide {display: table-cell !important;}.desktop-hide img,img.desktop-hid=
+e {max-height: none !important;width: auto !important;}.desktop-hide .flex-=
+image {width: 100% !important;}#content-table,.row,.fluid-row,.md-fluid-row=
+,.row-spacer,#navigation,.row .col-1,.row .col-2,.row .col-3,.row .col-4,.r=
+ow .col-5,.row .col-6,.row .col-7,.row .col-8,.row .col-9,.row .col-10,.row=
+ .col-11,.col-12 { width: 100% !important; }.fluid-row .col-1,.md-fluid-row=
+ .col-1 { width: 8.25% !important;}.fluid-row .col-2,.md-fluid-row .col-2 {=
+ width: 16.5% !important;}.fluid-row .col-3,.md-fluid-row .col-3 { width: 2=
+5% !important;}.fluid-row .col-4,.md-fluid-row .col-4 { width: 33% !importa=
+nt;}.fluid-row .col-5,.md-fluid-row .col-5 { width: 41.25% !important;}.flu=
+id-row .col-6,.md-fluid-row .col-6 { width: 50% !important;}.fluid-row .col=
+-7,.md-fluid-row .col-7 { width: 57.75% !important;}.fluid-row .col-8,.md-f=
+luid-row .col-8 { width: 66% !important;}.fluid-row .col-9,.md-fluid-row .c=
+ol-8 { width: 74.25% !important;}.fluid-row .col-10,.md-fluid-row .col-10 {=
+ width: 82.5% !important; }.fluid-row .col-11,.md-fluid-row .col-11 { width=
+: 90.75% !important;}.m-block {width:100% !important; display: block !impor=
+tant;}.m-align-left {text-align: left !important;}.m-align-center {text-ali=
+gn: center !important;}.m-align-right {text-align: right !important;}.m-wid=
+th-25 {width: 25% !important;}.m-width-33 {width: 33.33% !important;}.m-wid=
+th-50 {width: 50% !important;}.m-width-66 {width: 66.66% !important;}.m-wid=
+th-75 {width: 75% !important;}.m-font-16 {font-size: 16px !important;}.m-fo=
+nt-24 {font-size: 24px !important;}.m-font-32 {font-size: 32px !important;}=
+.m-lineheight-1 {line-height: 1 !important;}.m-lineheight-1half {line-heigh=
+t: 1.5 !important;}.m-lineheight-2 {line-height: 2 !important;}#vte-hero-pr=
+oduct .hero-product-container {padding-top: 0 !important;}#vte-nav-widget-i=
+mage-container {padding-top: 0 !important;padding-right: 0 !important;paddi=
+ng-bottom: 0 !important;padding-left: 0 !important;}.mobile-center {text-al=
+ign: center !important;float: none !important;}.mobile-center img {text-ali=
+gn: center !important;margin: 0 auto !important;}
+         =20
+          #widget_b14af55fe913cb02f207d4403eeef471 .text-button-content td =
+a {font-size: 16px !important;line-height: 18px !important;letter-spacing: =
+0em !important;}#widget_b14af55fe913cb02f207d4403eeef471 .button-container =
+{padding-left: 10px !important;padding-right: 10px !important;}#widget_b14a=
+f55fe913cb02f207d4403eeef471 .widget_top_bottom_padding {padding-top: 10px =
+!important;padding-bottom: 10px !important;}
+   =20
+  #widget_ae0d7e8811877cc4488e2548ffb46e50 .block-content .image-widget-con=
+tent {padding-left: 0px !important;padding-right: 0px !important;}#widget_a=
+e0d7e8811877cc4488e2548ffb46e50 .block-content .image-widget-content .mobil=
+e-width {width: 320px !important;}#widget_ae0d7e8811877cc4488e2548ffb46e50 =
+.widget_top_bottom_padding {padding-top: 10px !important;padding-bottom: 10=
+px !important;}
+   =20
+  #widget_6ef8c80761319f0dfbcc4f69c86f7b79 .block-content td {font-size: 30=
+px !important;line-height: 34px !important;letter-spacing: -0.03em !importa=
+nt;padding-left: 10px !important;padding-right: 10px !important;}#widget_6e=
+f8c80761319f0dfbcc4f69c86f7b79 .widget_top_bottom_padding {padding-top: 5px=
+ !important;padding-bottom: 5px !important;}
+   =20
+  #widget_1b40de60e6b838b884704eddaee7202d .block-content td {font-size: 16=
+px !important;line-height: 20px !important;letter-spacing: 0.0em !important=
+;padding-left: 10px !important;padding-right: 10px !important;}#widget_1b40=
+de60e6b838b884704eddaee7202d .widget_top_bottom_padding {padding-top: 10px =
+!important;padding-bottom: 14px !important;}
+   =20
+  #widget_8cc3699e8ce21cf460da457827eb5fc9 .text-button-content td a {font-=
+size: 16px !important;line-height: 19px !important;letter-spacing: 0em !imp=
+ortant;}#widget_8cc3699e8ce21cf460da457827eb5fc9 .button-container {padding=
+-left: 0px !important;padding-right: 0px !important;}#widget_8cc3699e8ce21c=
+f460da457827eb5fc9 .widget_top_bottom_padding {padding-top: 14px !important=
+;padding-bottom: 30px !important;}
+   =20
+ =20
+    #widget_8bf50a71a863ddcf7a3d3764b21a3b48, #widget_8bf50a71a863ddcf7a3d3=
+764b21a3b48 .p, #widget_8bf50a71a863ddcf7a3d3764b21a3b48 .aw {width: 100% !=
+important;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .gc {padding: 10px 10px=
+ 10px 10px !important;width: 100% !important;}#widget_8bf50a71a863ddcf7a3d3=
+764b21a3b48 .pd {padding-right: 10px !important;padding-left: 10px !importa=
+nt;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .gi {width: 50% !important;dis=
+play: block !important;float: left !important;box-sizing: border-box !impor=
+tant;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .gi .pc, #widget_8bf50a71a86=
+3ddcf7a3d3764b21a3b48 .gi-last .pc {padding: 0 5px 0 5px !important;}#widge=
+t_8bf50a71a863ddcf7a3d3764b21a3b48 .gi-last {width: 100% !important;}#widge=
+t_8bf50a71a863ddcf7a3d3764b21a3b48 .gi-last .pc {width: 100% !important;dis=
+play: block !important;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .gi-last .=
+p {width: 50% !important;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .pa {pad=
+ding-left: 0 !important;padding-right: 0 !important;}#widget_8bf50a71a863dd=
+cf7a3d3764b21a3b48 .pa p {}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .name {=
+height: 36px !important;}#widget_8bf50a71a863ddcf7a3d3764b21a3b48 .name p {=
+width: 100% !important;min-height: 36px !important;height: auto !important;=
+}
+  #widget_ab0aa808604657a282454198d9386d52 .text-button-content td a {font-=
+size: 16px !important;line-height: 19px !important;letter-spacing: 0em !imp=
+ortant;}#widget_ab0aa808604657a282454198d9386d52 .button-container {padding=
+-left: 0px !important;padding-right: 0px !important;}#widget_ab0aa808604657=
+a282454198d9386d52 .widget_top_bottom_padding {padding-top: 14px !important=
+;padding-bottom: 30px !important;}
+   =20
+  #widget_c3a41fa36194fb0915057c9fa9d4c3c9 td {padding-left: 0 !important;p=
+adding-right: 0 !important;}#widget_c3a41fa36194fb0915057c9fa9d4c3c9 .widge=
+t_top_padding {padding-top: 10px !important;}#widget_c3a41fa36194fb0915057c=
+9fa9d4c3c9 .widget_bottom_padding {padding-bottom: 10px !important;}
+   =20
+  #widget_9e4fd197b73f8ea00241d3fdc9299cac .block-content td {font-size: 26=
+px !important;line-height: 18px !important;letter-spacing: 0.0em !important=
+;padding-left: 0px !important;padding-right: 0px !important;}#widget_9e4fd1=
+97b73f8ea00241d3fdc9299cac .widget_top_bottom_padding {padding-top: 30px !i=
+mportant;padding-bottom: 20px !important;}
+   =20
+ =20
+    #widget_12052c032867a6fb3d0f5ce56096ed72, #widget_12052c032867a6fb3d0f5=
+ce56096ed72 .p, #widget_12052c032867a6fb3d0f5ce56096ed72 .aw {width: 100% !=
+important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .gc {padding: 25px 10px=
+ 25px 10px !important;width: 100% !important;}#widget_12052c032867a6fb3d0f5=
+ce56096ed72 .pd {padding-right: 20px !important;padding-left: 20px !importa=
+nt;}#widget_12052c032867a6fb3d0f5ce56096ed72 .gi {width: 50% !important;dis=
+play: block !important;float: left !important;box-sizing: border-box !impor=
+tant;}#widget_12052c032867a6fb3d0f5ce56096ed72 .gi .pc, #widget_12052c03286=
+7a6fb3d0f5ce56096ed72 .gi-last .pc {padding: 0 5px 0 5px !important;}#widge=
+t_12052c032867a6fb3d0f5ce56096ed72 .gi-last {width: 100% !important;}#widge=
+t_12052c032867a6fb3d0f5ce56096ed72 .gi-last .pc {width: 100% !important;dis=
+play: block !important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .gi-last .=
+p {width: 50% !important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .pa {pad=
+ding-left: 0 !important;padding-right: 0 !important;}#widget_12052c032867a6=
+fb3d0f5ce56096ed72 .pa p {}#widget_12052c032867a6fb3d0f5ce56096ed72 .name {=
+height: 36px !important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .name p {=
+width: 100% !important;min-height: 36px !important;height: auto !important;=
+}#widget_12052c032867a6fb3d0f5ce56096ed72 .parent_viewed_product_7_day {hei=
+ght: 36px !important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .parent_view=
+ed_product_7_day p {width: 120px !important;min-height: 36px !important;hei=
+ght: auto !important;}#widget_12052c032867a6fb3d0f5ce56096ed72 .cta a {line=
+-height: 15px !important;}
+  #widget_aaf191ba3408391f063aa67c1a0b31f2 .block-content td {font-size: 26=
+px !important;line-height: 18px !important;letter-spacing: 0.0em !important=
+;padding-left: 0px !important;padding-right: 0px !important;}#widget_aaf191=
+ba3408391f063aa67c1a0b31f2 .widget_top_bottom_padding {padding-top: 50px !i=
+mportant;padding-bottom: 20px !important;}
+          #widget_8499b2ee051bcee0fb8838e7739c364c, #widget_8499b2ee051bcee=
+0fb8838e7739c364c .bp {width: 100% !important;}#widget_8499b2ee051bcee0fb88=
+38e7739c364c .mc {padding-left: 10px !important;padding-right: 10px !import=
+ant;}#widget_8499b2ee051bcee0fb8838e7739c364c .sbe.mobile-hide {display: no=
+ne !important;}#widget_8499b2ee051bcee0fb8838e7739c364c td img {margin: 0 a=
+uto !important;}#widget_8499b2ee051bcee0fb8838e7739c364c .bp {width: 100% !=
+important;table-layout: fixed !important;}#widget_8499b2ee051bcee0fb8838e77=
+39c364c .sbe {width: 10px}#widget_8499b2ee051bcee0fb8838e7739c364c .c {widt=
+h: 33% !important;}#widget_8499b2ee051bcee0fb8838e7739c364c .c img {width: =
+100% !important;}
+          #widget_61142a90f0e8255dceef00e86b6bb18c, #widget_61142a90f0e8255=
+dceef00e86b6bb18c .bp {width: 100% !important;}#widget_61142a90f0e8255dceef=
+00e86b6bb18c .mc {padding-left: 10px !important;padding-right: 10px !import=
+ant;}#widget_61142a90f0e8255dceef00e86b6bb18c .sbe.mobile-hide {display: no=
+ne !important;}#widget_61142a90f0e8255dceef00e86b6bb18c td img {margin: 0 a=
+uto !important;}#widget_61142a90f0e8255dceef00e86b6bb18c .bp {width: 100% !=
+important;table-layout: fixed !important;}#widget_61142a90f0e8255dceef00e86=
+b6bb18c .sbe {width: 10px}#widget_61142a90f0e8255dceef00e86b6bb18c .c {widt=
+h: 33% !important;}#widget_61142a90f0e8255dceef00e86b6bb18c .c img {width: =
+100% !important;}
+         =20
+          #widget_5385da0d7bcab22d452f15b0708cc316 .block-content td {font-=
+size: 12px !important;line-height: 15px !important;letter-spacing: 0.0em !i=
+mportant;padding-left: 10px !important;padding-right: 10px !important;}#wid=
+get_5385da0d7bcab22d452f15b0708cc316 .widget_top_bottom_padding {padding-to=
+p: 0px !important;padding-bottom: 23px !important;}
+          }
+</style>
+</head> <body style=3D"margin:0; padding:0; -webkit-text-size-adjust:100%; =
+-ms-text-size-adjust:100%">
+<div style=3D"display: none; max-height: 0px; overflow: hidden;"> Lo que no=
+ compres hoy&#8230; lo pierdes&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;=
+&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nb=
+sp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&=
+#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbs=
+p;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp=
+;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&n=
+bsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;=
+&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nb=
+sp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&=
+#8204;&nbsp;&#8204;&nbsp;&#8204; &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nb=
+sp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;=
+&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbs=
+p;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp=
+;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&n=
+bsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;=
+&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nb=
+sp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;=
+&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbs=
+p;&#8204;&nbsp;&#8204;&nbsp;&#8204; &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;=
+&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbs=
+p;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#820=
+4;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&n=
+bsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204=
+;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nb=
+sp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;=
+&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbs=
+p;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204; &nbsp;&#8204;&nbsp;&#8204;&nbsp;&#82=
+04;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#820=
+4;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&n=
+bsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204=
+;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8=
+204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;=
+&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#82=
+04;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&=
+nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#820=
+4;&nbsp;&#8204;&nbsp;&#8204;&nbsp;&#8204; &nbsp;&#8204;&nbsp; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy=
+; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy=
+; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy=
+; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy=
+; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy=
+; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &=
+shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &shy; &nbsp; </d=
+iv>
+<!-- tracking pixel container --> <div id=3D"bluecore-pixel" style=3D"displ=
+ay: none; max-height: 0px; overflow: hidden;"><div style=3D"display:none"><=
+img src=3D"https://trk.ecomm.lenovo.com/ss/o/u001.9cUcRvApcbiFNLhpa8Tymg/4u=
+s/4Qbi6Da9Rk6YMnkVgJHrXA/ho.gif" alt=3D"" width=3D"1" height=3D"1" border=
+=3D"0" style=3D"height:1px !important;width:1px !important;border-width:0 !=
+important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0=
+ !important;margin-left:0 !important;padding-top:0 !important;padding-botto=
+m:0 !important;padding-right:0 !important;padding-left:0 !important;"></div=
+></div> <table id=3D"wrapper-table" width=3D"100%" cellspacing=3D"0" cellpa=
+dding=3D"0" border=3D"0" role=3D"presentation" style=3D"border-collapse:col=
+lapse; mso-table-lspace:0pt; mso-table-rspace:0pt; margin:0; padding:0"><tr=
+><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"><table id=3D"content-table" width=3D"600" align=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presen=
+tation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-=
+rspace:0pt"><tr><td id=3D"content-cell" align=3D"center" style=3D"border-co=
+llapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"> <!-- navigati=
+on --><!----><table class=3D"row" bgcolor=3D"#ffffff" width=3D"600" align=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-i=
+d=3D"t6358073757392896gw5670153961054208lw5466464496508928" add-link-instan=
+ces=3D"True" role=3D"presentation" style=3D"border-collapse:collapse; mso-t=
+able-lspace:0pt; mso-table-rspace:0pt"><tr><td style=3D"border-collapse:col=
+lapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<table class=3D"col-6" width=3D"130" align=3D"left" cellspacing=3D"0" cellp=
+adding=3D"0" border=3D"0" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0; mso-table-rspace:0; border-left:1px; border-right:1px; float:left" ro=
+le=3D"presentation"><tr><td id=3D"vte-nav-widget-image-container" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:0px; padding-right:0px; padding-bottom:0px; padding-left:0px" align=
+=3D"center"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5=
+g4-6SK_bdFIV-ttFtuFoQT3R5LpqyMXWaHY_M8H9ChNCu0R9h9DeZkfn02YjTbjpy36go92rQ/4=
+us/4Qbi6Da9Rk6YMnkVgJHrXA/h0/h001.XV5SZarBbqW3z9tUEvXoJZmuMysM28tOXweT2W0TE=
+ao" target=3D"_blank"><img width=3D"130" src=3D"https://partner-images.blue=
+core.com/lenovo_it/LenovoLogo-POS-Red_1.png" alt=3D"Lenovo" align=3D"center=
+" style=3D"display:block; height:auto; line-height:100%; text-decoration:no=
+ne; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height=3D"=
+auto"></a></td></tr></table>
+<table class=3D"col-6 mobile-hide" width=3D"466" align=3D"right" cellspacin=
+g=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-collapse:collapse; m=
+so-table-lspace:0; mso-table-rspace:0; border-left:1px; border-right:1px; f=
+loat:right" role=3D"presentation"><tr><td style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt"><table id=3D"navigation" widt=
+h=3D"100%" align=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" =
+role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"><tr><td style=3D"border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt; padding-top:13px; padding-left:0px; p=
+adding-right:0px"><table class=3D"block-content" align=3D"center" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" style=3D"bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100=
+%; text-align:center" width=3D"100%"><tr><td align=3D"right" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:=
+13px; font-family:'Montserrat Regular', Arial, Helvetica, sans-serif; text-=
+transform:none; text-align:right; letter-spacing:0em; line-height:16px; bac=
+kground-color:transparent" width=3D"50" valign=3D"middle" bgcolor=3D"transp=
+arent"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6S=
+K_bdFIV-ttFtuFoQT3R5LpqyNYCk4LkgN3KP5cXiVa1QUCmy8kHuO3ODY2wLTDQUw9AA/4us/4Q=
+bi6Da9Rk6YMnkVgJHrXA/h1/h001.qJgWdCaww8ZLfe-Yc3GbErZUpr5mYHYHbf7dkjxcF28" t=
+arget=3D"_blank" style=3D"color:#294E95;text-decoration: underline;"><span =
+style=3D"color: #294E95;">Versi&oacute;n Online</span></a></td></tr></table=
+></td></tr></table></td></tr></table>
+</td></tr></table>
+<!-- end navigation --> <!----> <!----> <span widget-type=3D"code_block" li=
+nk-context-id=3D"t6358073757392896gw5384363944828928lw6221257106120704"> <p=
+ style=3D"margin:0; text-align:center; font-weight:bold; color:#ffffff; bac=
+kground:#000000; padding:10px; font-family:'Montserrat Bold', Arial, Helvet=
+ica, sans-serif; border:1px solid #FFFFFF" align=3D"center"> <a href=3D"htt=
+ps://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5L=
+pqyMOvKxqcVtkTzxfEQemaIUs76406RscQ8IPm5kAsro0Gg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/=
+h2/h001.Bbcl_KH3nIApLvdrewyO7KTY0ofijkKn-C4YmkQvwrM" target=3D"_blank" styl=
+e=3D"color: inherit; text-decoration: none;"> Env&iacute;os Gratis. &nbsp;V=
+er Promociones . Ofertas v&aacute;lidas desde el 05/10/26 hasta el 18/10/26=
+. Debido a la situaci&oacute;n actual, los tiempos de entrega podr&iacute;a=
+n verse afectados </a> </p> </span> <!-- button --><!----><table class=3D"r=
+ow" id=3D"widget_b14af55fe913cb02f207d4403eeef471" bgcolor=3D"transparent" =
+width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=
+=3D"0" link-context-id=3D"t6358073757392896lw5491276499902464" add-link-ins=
+tances=3D"True" role=3D"presentation" style=3D"border-collapse:collapse; ms=
+o-table-lspace:0pt; mso-table-rspace:0pt"><tr><td class=3D"widget_top_botto=
+m_padding" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-tab=
+le-rspace:0pt; padding-top:10px; padding-bottom:10px"><table class=3D"col-1=
+2" width=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" borde=
+r=3D"0" style=3D"border-collapse:collapse; mso-table-lspace:0; mso-table-rs=
+pace:0; border-left:1px; border-right:1px" role=3D"presentation"><tr><td cl=
+ass=3D"button-container" align=3D"center" style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:20px; padding-ri=
+ght:20px"><table class=3D"text-button-content" align=3D"center" cellspacing=
+=3D"0" cellpadding=3D"0" border=3D"0" style=3D"mso-table-lspace:0pt; mso-ta=
+ble-rspace:0pt; border-collapse:initial" role=3D"presentation"><tr><td alig=
+n=3D"center" valign=3D"middle" style=3D"border-collapse:collapse; mso-table=
+-lspace:0pt; mso-table-rspace:0pt; background-color:#B8252E; color:#FFFFFF;=
+ letter-spacing:0em; line-height:18px; border-radius:15px" bgcolor=3D"#B825=
+2E">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+0"height=3D"38"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyMaGjpkSessDyIk8s2nVFwnGZc5iFvAZJGYPjpqCgyPTw/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h3/h001.MZfG5pXrn4-PJ5WWygQQoyNL38L1f0pnnL1WdqoOYAE"=
+ target=3D"_blank" style=3D"display: block;color: #FFFFFF;text-decoration: =
+none;font-family:'Montserrat Regular', Arial, Helvetica, sans-serif;font-si=
+ze: 16px;;line-height: 18px;border-top: 10px solid #B8252E;border-bottom: 1=
+0px solid #B8252E;border-left: 20px solid #B8252E;border-right: 20px solid =
+#B8252E;border-radius: 15px;">Hasta 56% OFF</a><!--[if (gte mso 9)|(IE)]></=
+td><td width=3D"10"style=3D"display:none;"class=3D"mso-only">&nbsp;</td></t=
+r></table><![endif]-->
+</td></tr></table></td></tr></table></td></tr></table>
+<!-- end button --><!-- image --><!----><table class=3D"row" bgcolor=3D"tra=
+nsparent" id=3D"widget_ae0d7e8811877cc4488e2548ffb46e50" width=3D"600" alig=
+n=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-=
+id=3D"t6358073757392896lw6617176406745088" add-link-instances=3D"True" role=
+=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:10px; padding-bottom:10px"><table class=3D"col-12" width=3D"600" ali=
+gn=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"bor=
+der-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:=
+1px; border-right:1px" role=3D"presentation"><tr><td style=3D"border-collap=
+se:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class=3D"bl=
+ock-content" width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=
+=3D"0" border=3D"0" role=3D"presentation" style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center=
+"><tr><td align=3D"center" class=3D"image-widget-content" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-left:=
+0px; padding-right:0px; line-height:1px; font-size:1px">
+<a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV=
+-ttFtuFoQT3R5LpqyMeoC47uff2YJ4b93mEM8G0XMaI8TWcHTtF8LlG-VXa4w/4us/4Qbi6Da9R=
+k6YMnkVgJHrXA/h4/h001.ojTdGR5KcfXCNZ342m30g8zDaRkl9Zh9uhFdllM4h0k" target=
+=3D"_blank"><img class=3D"mobile-hide" src=3D"https://p1-ofp.static.pub/Sha=
+reResource/pe/lenovo/2025/campaigns/octubre/cyber-week/email/hero-desktop.p=
+ng" alt=3D"Weekend Sale" border=3D"0" style=3D"display:block; height:auto; =
+line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mod=
+e:bicubic; border:0 none; font-size:initial" width=3D"600" height=3D"auto">=
+</a><!-- [if !mso]><! --><div class=3D"desktop-hide" style=3D"display:none;=
+ padding:0; max-height:0; overflow:hidden; float:left; font-size:0; line-he=
+ight:0; mso-hide:all"><table align=3D"center" border=3D"0" cellpadding=3D"0=
+" cellspacing=3D"0" role=3D"presentation" style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D"center" clas=
+s=3D"desktop-hide" style=3D"border-collapse:collapse; mso-table-lspace:0pt;=
+ mso-table-rspace:0pt; display:none; padding:0; max-height:0; overflow:hidd=
+en; float:left; mso-hide:all; line-height:0px; font-size:0px"><a href=3D"ht=
+tps://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5=
+LpqyOEgg3c4sGk2a8HGbCnc4_DqW6e1W3aYiYBbfa_Yvt8FQ/4us/4Qbi6Da9Rk6YMnkVgJHrXA=
+/h5/h001.UClrR1IzAH1dgn_FC5seQSuemEEMiKh6JfSZmoUqyPQ" target=3D"_blank"><im=
+g class=3D"flex-image" width=3D"0" src=3D"https://p1-ofp.static.pub/ShareRe=
+source/pe/lenovo/2025/campaigns/octubre/cyber-week/email/hero-mobile.png" a=
+lt=3D"Weekend Sale" border=3D"0" style=3D"display:block; height:auto; line-=
+height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bic=
+ubic; border:0 none; max-height:0; width:0; font-size:initial" height=3D"au=
+to"></a></td></tr></table></div>
+<!-- <![endif] -->
+</td></tr></table></td></tr></table></td></tr></table>
+<!-- end image --><!-- text --><!----><table bgcolor=3D"transparent" class=
+=3D"row" id=3D"widget_6ef8c80761319f0dfbcc4f69c86f7b79" width=3D"600" align=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-i=
+d=3D"t6358073757392896lw4576482825592832" add-link-instances=3D"True" role=
+=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:5px; padding-bottom:5px"><table class=3D"col-12" width=3D"600" align=
+=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"border-=
+collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1px;=
+ border-right:1px" role=3D"presentation"><tr><td style=3D"border-collapse:c=
+ollapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class=3D"block-=
+content" width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D"0=
+" border=3D"0" role=3D"presentation" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center"><tr=
+><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt; font-size:44px; line-height:48px; letter-spacing:=
+-0.03em; text-transform:none; padding-left:50px; padding-right:50px"><p sty=
+le=3D"margin:0 !important; text-align:center; color:#000001" align=3D"cente=
+r"><strong><span style=3D"color: #1e1c1c; font-family: 'Montserrat', 'Monts=
+errat Bold', Arial, Helvetica, sans-serif;">&iexcl;Ahorra este Finde!</span=
+></strong></p></td></tr></table></td></tr></table></td></tr></table>
+<!-- end text --><!-- text --><!----><table bgcolor=3D"transparent" class=
+=3D"row" id=3D"widget_1b40de60e6b838b884704eddaee7202d" width=3D"600" align=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-i=
+d=3D"t6358073757392896lw5702382732435456" add-link-instances=3D"True" role=
+=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:10px; padding-bottom:14px"><table class=3D"col-12" width=3D"600" ali=
+gn=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1p=
+x; border-right:1px" role=3D"presentation"><tr><td style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class=3D"bloc=
+k-content" width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" role=3D"presentation" style=3D"border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center"><=
+tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspace=
+:0pt; mso-table-rspace:0pt; font-size:16px; line-height:24px; letter-spacin=
+g:0.0em; text-transform:none; padding-left:10px; padding-right:10px"><p sty=
+le=3D"margin:0 !important; text-align:center; color:#000001" align=3D"cente=
+r"><span style=3D"font-family: 'Montserrat', 'Montserrat Regular', Arial, H=
+elvetica, sans-serif; ; color: #ffffff;"><span style=3D"color: #1e1c1c;">Lo=
+s equipos que quieres est&aacute;n a un precio que vale la pena aprovechar<=
+/span></span></p></td></tr></table></td></tr></table></td></tr></table>
+<!-- end text --><!-- button --><!----><table class=3D"row" id=3D"widget_8c=
+c3699e8ce21cf460da457827eb5fc9" bgcolor=3D"transparent" width=3D"600" align=
+=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-i=
+d=3D"t6358073757392896lw5139432779014144" add-link-instances=3D"True" role=
+=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:14px; padding-bottom:30px"><table class=3D"col-12" width=3D"600" ali=
+gn=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"bor=
+der-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:=
+1px; border-right:1px" role=3D"presentation"><tr><td class=3D"button-contai=
+ner" align=3D"center" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px"><table class=
+=3D"text-button-content" align=3D"center" cellspacing=3D"0" cellpadding=3D"=
+0" border=3D"0" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border=
+-collapse:initial" role=3D"presentation"><tr><td align=3D"center" valign=3D=
+"middle" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table=
+-rspace:0pt; background-color:#000000; color:#ffffff; letter-spacing:0em; l=
+ine-height:19px; border-radius:67px" bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"47"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyMdNAJ1RJjU5jJp5nGPqNl0wO6aHWNX7NGeHOz641pgrQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h6/h001.B5gGMx9c8LK2--K2fw61x0PflO-2JdNepxSdnFVcZJM"=
+ target=3D"_blank" style=3D"display: block;color: #ffffff;text-decoration: =
+none;font-family:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif;font=
+-size: 16px;;line-height: 19px;border-top: 14px solid #000000;border-bottom=
+: 14px solid #000000;border-left: 24px solid #000000;border-right: 24px sol=
+id #000000;border-radius: 67px;">Ver Ofertas</a><!--[if (gte mso 9)|(IE)]><=
+/td><td width=3D"12"style=3D"display:none;"class=3D"mso-only">&nbsp;</td></=
+tr></table><![endif]-->
+</td></tr></table></td></tr></table></td></tr></table>
+<!-- end button --><!-- grid layout --><!--BLOCK_METADATA_PREFIX-{"max_prod=
+ucts": 6, "block_name": "product_block"}-BLOCK_METADATA_POSTFIX--><!----><t=
+able bgcolor=3D"transparent" id=3D"widget_8bf50a71a863ddcf7a3d3764b21a3b48"=
+ width=3D"600" widget-type=3D"dynamic_product_block" align=3D"center" link-=
+context-id=3D"t6358073757392896lw6265332685856768" role=3D"presentation" st=
+yle=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt=
+"><tr><td class=3D"gc" style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt; mso-table-rspace:0pt; padding:10px 40px 10px 40px">
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyMeGRuhvFKzsLbgwkQYkSTqxreyQEn=
+KP1_qMZyvfu7tcw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h7/h001.q8sSjfIsL3v-7hosOOZcwtke=
+2DVmEovHi-31UFY41Ns" target=3D"_blank"><img width=3D"160" class=3D"flex-ima=
+ge" alt=3D"IdeaCentre AIO i Gen 9 (27&quot; Intel)" src=3D"https://bluecore=
+-image.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3D=
+aHR0cHM6Ly9wMi1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI0LzEyLzI2LzRwbTdwZmZsYmF=
+wMXVqaWNvcDRvNDF3bm1rMTg0ZjAzMDUyNS5wbmc%3D&amp;width=3D160&amp;height=3D16=
+0&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKh=
+bNfjX1gfellRQ14pBsG_llAIeH3Bvj_ltH9_cnEIQKR3qhuJYPQTcz0A_RdHf78LugHKXeOgtnK=
+t0htWRK6HDxXFnJUkX-ugiGXIO_oqp3RWniid8rrdHyKS0tuz2sCb0U5_dILM_EB8kc_2nopfVE=
+2CJTlGhLXXz3PkzA-Ox31w%3D%3D" style=3D"display:block; line-height:100%; tex=
+t-decoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 n=
+one; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">IdeaCentre AIO i Gen=
+ 9...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyORAwhkTNkTR2KbcS5PqmbvdiMgD7FM3Onu-nMARqcDcg/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h8/h001.OQDiojCljepN7t3X1G6HkFEkACk-Zsb1FkQWi5uUjvs"=
+ target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-famil=
+y:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fon=
+t-size:16px; text-align:center; border-radius:64px; border-top:12px solid #=
+000000; border-bottom:12px solid #000000; border-left:24px solid #000000; b=
+order-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compra=
+r</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;"=
+class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPRJirk0ZtZv_HBVkZNseuEDzXQnn1=
+Pd7No8n2t38KMew/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h9/h001.oIq0UGfMYbJniSjnVTTRTMxl=
+9e6UdoeoQD_dmopVjXI" target=3D"_blank"><img width=3D"160" class=3D"flex-ima=
+ge" alt=3D"Legion Tab Gen 3 (con Funda + Vidrio Templado)" src=3D"https://b=
+luecore-image.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image=
+_url=3DaHR0cHM6Ly9wMy1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI0LzEyLzE2L3NicGFl=
+bzk2MXowdHFjMjYzM2g0aHFicXdqcGluYjc0MDEyOS5wbmc%3D&amp;width=3D160&amp;heig=
+ht=3D160&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51n=
+oON5dKhbcZBaFXNXDeSu7swl8IbCoKedjUa0VcHD4mlqGcvqZ5DFnfZRP3lvMoCAMq0N0URRNL6=
+bmqK123p2BzwsUBiEUNuz04BRINcyuDfZO75XeTQGT7nhVtWdDfZxOA2TKMig_Ki3aR6sXMQkQ3=
+lmrqogrmtnW8eXVQLq8m2aj2TKKJg%3D%3D" style=3D"display:block; line-height:10=
+0%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; bor=
+der:0 none; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">Legion Tab Gen 3 (co=
+n...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyNin25q3hGIppyybViOnXS1vtL6Pq6TbU2atKv0Ps_TGQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h10/h001.8Q_cqb6FzAnb8QgNaVFJFFzjXKRF0LgNDrFLj72C2X8=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:64px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyM8RLsYzLQRhfW7wMLHL5vrhHzen0i=
+oOS6G4bH69QyqYw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h11/h001.nG8ozB1Y6d9VWE5kWXd3IpR=
+IHPIE-cqhKe5wNgO9cFo" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"ThinkPad L14 Gen 6 (14&quot; AMD)" src=3D"https://bluecore-imag=
+e.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3DaHR0c=
+HM6Ly9wNC1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI1LzA0LzE4L2JwM3l4Y2ZycXk5MjUx=
+MHE3czF4b2hzenM5dmE0MzI4NTM0NC5wbmc%3D&amp;width=3D160&amp;height=3D160&amp=
+;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhbx27M=
+7DZRceV9mJMDqQweVp9rOd9F36lfWMToUagYKRzv86NwbHSKQxdLxamMel5IFOfsr0ZSX3AyzPB=
+heOhGMLUv77YBNN3zyikDvAt-9L8P0-O96avM8mzpGbrqMpraZTE3lX3gjihhgjnsnMA1rDY9Kg=
+2XwHUQcEd1iDVVaRw%3D%3D" style=3D"display:block; line-height:100%; text-dec=
+oration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none; =
+height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">ThinkPad L14 Gen 6 (=
+14&quot; AMD)</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyOy6vUcmJOwbrXQPfkY6pPfmzOnqhuIUwbl0t281FpcCA/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h12/h001.MBTKVYHws5qCgVw0fo_3cv7r7x-kdhmsriAKLv6UYXk=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:64px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyOLq41Lbh1yb3K4vgcnUZO2BFtGOHO=
+LO8risIZNEwXusw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h13/h001.I7vkQe81Lvr7-Psv7v7vLZA=
+jAfLi0zrdT43Hnz9RoKs" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"IdeaPad Slim 5i Gen 10 (16&quot; Intel)" src=3D"https://bluecor=
+e-image.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=
+=3DaHR0cHM6Ly9wNC1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI0LzExLzE4L2RoaWk5cDdr=
+a2QydW5manZ5enBybzBreGo4cmxwbzEzMTYyMS5wbmc%3D&amp;width=3D160&amp;height=
+=3D160&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noO=
+N5dKhbx27M7DZRceV9mJMDqQweVp9rOd9F36lfWMToUagYKRyOUURKAGvAQRcBuK5WWIUnw5aj0=
+ku_5N8tAeYoqG0LgUPwDxC9IQhOaqsTwdVxbzG--Vv2aZC6oMg5wV1tSBASb0MAix2CiP-MAe9T=
+v2rCvgjf9Ea6GDbYxddJ0eCVuow%3D%3D" style=3D"display:block; line-height:100%=
+; text-decoration:none; outline:none; -ms-interpolation-mode:bicubic; borde=
+r:0 none; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">IdeaPad Slim 5i Gen =
+10...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyMFOTmI42HBDuMfqOSODLgM8BndE14WbMSl2PMBP8fnBQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h14/h001.6QdOhYI-evsXL3RtKoUFMZO6MA-Ge1UcOD6PNWTtg3Q=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:64px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPNtXybITL_e-G28bX6OdazI5H4qL4=
+h7_NPlVHznqqmMw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h15/h001.j9uxBKYde9-zdQVNabcItKi=
+Fh42FiZDBYfzjsLRHhSk" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"ThinkCentre M70q Gen 5 (Tiny Intel)" src=3D"https://bluecore-im=
+age.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3DaHR=
+0cHM6Ly9wMy1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI0LzA1LzEzL2xxdHB2YnQwZmQwcW=
+M2ZTNjMTBpZ2JuNHd2NmZiNjc2NjE4OS5wbmc%3D&amp;width=3D160&amp;height=3D160&a=
+mp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhbcZ=
+BaFXNXDeSu7swl8IbCoKedjUa0VcHD4mlqGcvqZ5DFnfZRP3lvMoCAMq0N0URS1NMsaZcOVomAr=
+b29MmwNU7Km1w2ZxHBilOK59A4zrXm-YNJJidZyWGXcw1tzCzxzT4eWm-jQbQDybnyiiBAgN_RL=
+H98YJl89_c3dXSYXsBw%3D%3D" style=3D"display:block; line-height:100%; text-d=
+ecoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none=
+; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">ThinkCentre M70q Gen=
+ 5...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyOJgFHazJm6Z_b8UUc8CeQdSC6E0jzxytMEoxGVUSJrpQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h16/h001.1xJfVJf-t3XsAO1d1iqfhDDEGI1pnAgLhrqRsNwW8HA=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:64px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"258" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left">
+<tr><td class=3D"pc" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><table align=3D"center" width=3D"244" class=3D"p" =
+cellspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" styl=
+e=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; =
+border:1px solid #CCCCCC">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPydj-ML9WdYJp7Vy5xEWZ3tWVWa5Q=
+jARllJofBskDSrg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h17/h001.J7_KPCRE4NQ88vKU-lTF-gB=
+EelUG4DVDkOEvhSt7gGA" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"ThinkPad L14 Gen 6 (14&quot; Intel)" src=3D"https://bluecore-im=
+age.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3DaHR=
+0cHM6Ly9wMS1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI1LzA0LzE4Lzc5MWs1enR5aXF1bX=
+VpOGQ2ZHJsaGxvZG03cjA5djg3MTk5My5wbmc%3D&amp;width=3D160&amp;height=3D160&a=
+mp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhYuh=
+LRbf1RTEW06FLaPwhZ46_yodYqs_qujhxMwkdIWErUs8kXTIku85n7t0yYzoxEZlFloVZUOm7GM=
+DjWOcUW2T1XvDVgbO9O1GoH_N93BVIqYtjMrBQ7ORwWyPqzvS2se8U1YDxUHxxtkGPFWYDrZbP5=
+F91gqQ8uDbKs50rzdig%3D%3D" style=3D"display:block; line-height:100%; text-d=
+ecoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none=
+; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 0px 0px 0px"><table align=3D"center" c=
+lass=3D"aw" width=3D"244" cellpadding=3D"0" role=3D"presentation" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4a4a4a; text-decoration:non=
+e; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size:1=
+6px; font-weight:bold; letter-spacing:0em; line-height:18px; width:244px; h=
+eight:36px; display:block" width=3D"244" height=3D"36">ThinkPad L14 Gen 6 (=
+14&quot; Intel)</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:64px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyPg9Hqe5JmTv0eJWa4Uc4HBrMpaiQIZSztlPkkodJFQng/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h18/h001.7n8gvxxRudpbv38qG6iM24Pt0sYdH6y3Jia0etxNBIk=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:64px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr>
+<tr><td height=3D"10" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table>
+</td></tr></table>
+<!-- end grid layout --><!-- button --><!----><table class=3D"row" id=3D"wi=
+dget_ab0aa808604657a282454198d9386d52" bgcolor=3D"transparent" width=3D"600=
+" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-co=
+ntext-id=3D"t6358073757392896lw4857957802303488" add-link-instances=3D"True=
+" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace=
+:0pt; mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" sty=
+le=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;=
+ padding-top:14px; padding-bottom:30px"><table class=3D"col-12" width=3D"60=
+0" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=
+=3D"border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; borde=
+r-left:1px; border-right:1px" role=3D"presentation"><tr><td class=3D"button=
+-container" align=3D"center" style=3D"border-collapse:collapse; mso-table-l=
+space:0pt; mso-table-rspace:0pt; padding-left:0px; padding-right:0px"><tabl=
+e class=3D"text-button-content" align=3D"center" cellspacing=3D"0" cellpadd=
+ing=3D"0" border=3D"0" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt;=
+ border-collapse:initial" role=3D"presentation"><tr><td align=3D"center" va=
+lign=3D"middle" style=3D"border-collapse:collapse; mso-table-lspace:0pt; ms=
+o-table-rspace:0pt; background-color:#000000; color:#ffffff; letter-spacing=
+:0em; line-height:19px; border-radius:67px" bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"47"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyODnV-yo0fm4kCHMbx5moK8ruIfmvJidaLxo_aZna8MoA/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h19/h001.cxcIZKPZHiHRZnjRNqameNrAEU4TKmVlEwGvRt9-j8k=
+" target=3D"_blank" style=3D"display: block;color: #ffffff;text-decoration:=
+ none;font-family:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif;fon=
+t-size: 16px;;line-height: 19px;border-top: 14px solid #000000;border-botto=
+m: 14px solid #000000;border-left: 24px solid #000000;border-right: 24px so=
+lid #000000;border-radius: 67px;">Ver Todas las Ofertas</a><!--[if (gte mso=
+ 9)|(IE)]></td><td width=3D"12"style=3D"display:none;"class=3D"mso-only">&n=
+bsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr></table></td></tr></table>
+<!-- end button --><!-- begin divider --><!----><table class=3D"row-spacer"=
+ bgcolor=3D"transparent" id=3D"widget_c3a41fa36194fb0915057c9fa9d4c3c9" wid=
+th=3D"600" align=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0=
+" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace=
+:0pt; mso-table-rspace:0pt"><tr><td class=3D"widget_bottom_padding widget_t=
+op_padding" align=3D"center" style=3D"border-collapse:collapse; mso-table-l=
+space:0pt; mso-table-rspace:0pt; padding-right:0px; padding-left:0px; paddi=
+ng-bottom:10px; padding-top:10px"><table width=3D"100%" align=3D"center" ce=
+llspacing=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" style=
+=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><=
+tr><td height=3D"1" style=3D"border-collapse:collapse; mso-table-lspace:0pt=
+; mso-table-rspace:0pt; border-bottom:1px solid #ebebeb; mso-line-height-ru=
+le:exactly; line-height:1px; font-size:1px">&nbsp;</td></tr></table></td></=
+tr></table>
+<!-- end divider --><!-- text --><!----><table bgcolor=3D"transparent" clas=
+s=3D"row" id=3D"widget_9e4fd197b73f8ea00241d3fdc9299cac" width=3D"600" alig=
+n=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-=
+id=3D"t6358073757392896lw5420907755724800" add-link-instances=3D"True" role=
+=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_padding" style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; paddi=
+ng-top:30px; padding-bottom:20px"><table class=3D"col-12" width=3D"600" ali=
+gn=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0; border-left:1p=
+x; border-right:1px" role=3D"presentation"><tr><td style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table class=3D"bloc=
+k-content" width=3D"100%" align=3D"center" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" role=3D"presentation" style=3D"border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-align:center"><=
+tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspace=
+:0pt; mso-table-rspace:0pt; font-size:26px; line-height:18px; letter-spacin=
+g:0.0em; text-transform:none; padding-left:0px; padding-right:0px"><p style=
+=3D"margin:0 !important; text-align:center; color:#4e444e" align=3D"center"=
+><span style=3D"font-family: Montserrat, 'Montserrat Bold', Arial, Helvetic=
+a, sans-serif; color: #4e444e;"><strong><span style=3D"text-align: center; =
+text-decoration: none;">Recomendados para ti</span></strong></span></p></td=
+></tr></table></td></tr></table></td></tr></table>
+<!-- end text --><!-- grid layout --><!--BLOCK_METADATA_PREFIX-{"max_produc=
+ts": 6, "block_name": "reco_block"}-BLOCK_METADATA_POSTFIX--><!----><table =
+bgcolor=3D"transparent" id=3D"widget_12052c032867a6fb3d0f5ce56096ed72" widt=
+h=3D"600" widget-type=3D"dynamic_product_block" align=3D"center" link-conte=
+xt-id=3D"t6358073757392896lw6546807662567424" role=3D"presentation" style=
+=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><=
+tr><td class=3D"gc" style=3D"border-collapse:collapse; mso-table-lspace:0pt=
+; mso-table-rspace:0pt; padding:25px 0px 25px 0px">
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyMP9Ks2YD6rpX7e08rh0e8Pp5ZvvQ8=
+YadE7eFH6P240Dg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h20/h001.uRWJBqZHa2LMf2VE_CnuKwB=
+XrSMBsb3K9EF2ZXl4AY0" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"Legion 9i Gen 10 (18&quot; Intel) GeForce RTX&#8482; Serie 50 &=
+iexcl;Personalizable!" src=3D"https://bluecore-image.bluecore.app/api/v1/im=
+age/resize/lenovo_co?url_safe_b64_image_url=3DaHR0cHM6Ly9wMy1vZnAuc3RhdGljL=
+nB1Yi8vZmVzL2Ntcy8yMDI2LzA2LzA1L2R4NW95bW1udzI2cnE1MHFrMWozdGp4bXpyY2ZnbjUw=
+NTE5Ni5wbmc%3D&amp;width=3D160&amp;height=3D160&amp;fill_color=3Dwhite&amp;=
+s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhbcZBaFXNXDeSu7swl8IbCoKedjUa0=
+VcHD4mlqGcvqZ5NdCGYU3DUbejpm3ooQM6-kR2i2oMPKySWTU74sxf9dPchUldBx0bc7mO_gyU5=
+quGxWat6ExrmGSOFxir8-L0Kx8Fp5f_j6Zi1EwidVN-08FfSiE3cs_NqQY2Ax3ZERVUQ%3D%3D"=
+ style=3D"display:block; line-height:100%; text-decoration:none; outline:no=
+ne; -ms-interpolation-mode:bicubic; border:0 none; height:160px" height=3D"=
+160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">Legion 9i Gen 10 (18=
+&quot; Intel)...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">1336<span> personas viendo &=
+#128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyPomUcTDbwQpbsMeDIhsHZ0mnMFT2okqlqNEXqnUhnU3Q/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h21/h001.ADfVLz18AiKac8Xg7ReFR-6KNNWq3LkR_t2huziejOQ=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyN81jsojWGrTG-wmmRsqAWlAnLOOzw=
+8w439GuYs1BPeyw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h22/h001.JMVRN2MHDy0OSj8vDWP6FIF=
+_jKZ2kQtweGiI01KqECs" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"Legion 7i Gen 10 (16&quot; Intel) GeForce RTX&#8482; 5070" src=
+=3D"https://bluecore-image.bluecore.app/api/v1/image/resize/lenovo_co?url_s=
+afe_b64_image_url=3DaHR0cHM6Ly9wNC1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI2LzA=
+2LzIzLzN5eHZyM2hlNjdwbnNoOHRia2h1M3c5bWE5dmc5azA1ODkyOC5wbmc%3D&amp;width=
+=3D160&amp;height=3D160&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hm=
+Osp539kLjGBo51noON5dKhbx27M7DZRceV9mJMDqQweVp9rOd9F36lfWMToUagYKR3ZPjEbS1OY=
+H5ISaDb3e5JaNUdfvz3H1HlDA3Hs6zhvxVh3QmBWmvfefoc2sAhJ62tRhUAJeVA77QQFz964mzz=
+kls3_MReONqvFuXXMia-Egj3KcmgrDUSku4ZwSSjSXvQ%3D%3D" style=3D"display:block;=
+ line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mo=
+de:bicubic; border:0 none; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">Legion 7i Gen 10 (16=
+&quot; Intel)...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">509<span> personas viendo &#=
+128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyMbbM31RFkA6N_AJsAtHGzuwAuBosu0xgi8H_QfeY-5MQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h23/h001.z-JnJLu5486gNTP_RBWWsFn5pNh1UekYqL6n40SR6dk=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyO5IFOdOm3i4Aop3Z1RLwfDUL77ExR=
+cSNN_Id62whX1_g/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h24/h001.NRNJK6ePu3GoO6dRoNUgKzX=
+r4-zQdXOnyL4ZMpI-7SM" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"ThinkPad X1 2-en-1 Gen 10 Aura Edition (14&quot; Intel)" src=3D=
+"https://bluecore-image.bluecore.app/api/v1/image/resize/lenovo_co?url_safe=
+_b64_image_url=3DaHR0cHM6Ly9wMi1vZnAuc3RhdGljLnB1Yi9TaGFyZVJlc291cmNlL29wdG=
+ltaXplZC9wZHAvdGhpbmtwYWQvdGhpbmtwYWQteDEtc2VyaWVzL2xlbjEwMXQwMTE3L3RoaW5rc=
+GFkLXgxLTItaW4tMS1nZW4tMTAtYXVyYS1lZGl0aW9uLTE0LWludGVsLWFybC5wbmc%3D&amp;w=
+idth=3D160&amp;height=3D160&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOB=
+B8hmOsp539kLjGBo51noON5dKhbNfjX1gfellRQ14pBsG_llfeyCkqFa52gatPMcVBnwFRFj4lQ=
+sL_A4UMHpyfBKGE1XpjAdXxQwBhOn7lLUzIR716UaohfglC2K2os8eXT1UrTD3mYKm3aZvst4vj=
+elcQslTHSPdYD7yZJQf3dA8V4UxZ7MxGC72sta-88gMQQU2JUzpCcFzf95LT0cYyvrsG8a5x6yD=
+Ek6wD32mQ7bzYVBtXjAJ0NBnPGfCVZt6GxVhCvB5lx_b2VHOMglsjXX2zlWGFOrdbK6fDo3n6Vn=
+ClxK" style=3D"display:block; line-height:100%; text-decoration:none; outli=
+ne:none; -ms-interpolation-mode:bicubic; border:0 none; height:160px" heigh=
+t=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">ThinkPad X1 2-en-1 G=
+en 10 Aura...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">436<span> personas viendo &#=
+128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyORMTXgTHtJmBjWPhI1JyIyp-Ac3yVUqLkdkfWTRC4ZvQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h25/h001.z7ayJl2EQ-EnRYyFX4ov_vlnOz0a3TNAtLqrrgJBa4Q=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyNHLLep1k285F-m3yEF48-EfdpVl34=
+Nx6EKhfRyi_9ctw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h26/h001.kVaMY2x_dr-FRakNzYXkhv1=
+CUchXvSuOgRnFZrlx3tg" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"Lenovo LOQ Tower Gen 10 (17L Intel)" src=3D"https://bluecore-im=
+age.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3DaHR=
+0cHM6Ly9wMy1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI1LzA0LzI4L2xtMjlkNjZxbWljZ2=
+xvZnZoNDg5bXZiZ3c1Z2kxYzgwMzMyNC5wbmc%3D&amp;width=3D160&amp;height=3D160&a=
+mp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhbcZ=
+BaFXNXDeSu7swl8IbCoKedjUa0VcHD4mlqGcvqZ5H8qvUxASG07bBKi37ezZ2u2t0vlzX0ON4rZ=
+jT0811f4IZyeWWa0AxgC3AyayjrQgCLwbUlFjHV668xAntL6aDp3zPnJGVntc_U9VQ6yfLGfcjk=
+Q3NFXdglOdEJHGCrj5w%3D%3D" style=3D"display:block; line-height:100%; text-d=
+ecoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none=
+; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">Lenovo LOQ Tower Gen=
+ 10 (17L Intel)</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">1090<span> personas viendo &=
+#128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyMuLmI81KTEd2cS1iK-MsZI8asNTjjXk84oMbufV1G3SQ/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h27/h001.FqiC34pMemoYIo0vCa6zBBRnOL-Ca_LwUR9CGsRTYZ0=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPEeQkUHv9QCBsqtVy_tJezz2u4P4a=
+YFxNd90_LicPkrg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h28/h001.L2y5v-ejNQVZnuHjYCzsx-j=
+PJ2zu_lA_xztdrr688II" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"Legion 5i Gen 10 (15&quot; Intel) GeForce RTX&#8482; 5060" src=
+=3D"https://bluecore-image.bluecore.app/api/v1/image/resize/lenovo_co?url_s=
+afe_b64_image_url=3DaHR0cHM6Ly9wMy1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI1LzA=
+0LzE0Lzg2YmE2d3l6ZjUweDQ5bnJ5aW5rZmF3MWN1dGJsNDk4NzQxOS5wbmc%3D&amp;width=
+=3D160&amp;height=3D160&amp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hm=
+Osp539kLjGBo51noON5dKhbcZBaFXNXDeSu7swl8IbCoKedjUa0VcHD4mlqGcvqZ5H8qvUxASG0=
+7bBKi37ezZ2v-Qy_lZSOHNGyGJszeTlZQIn-GuOGrUM8s3rQrh118wG45kv-VWiYXbpCqR_42Pc=
+D_wlJ7gVZ5Sy1gPy1Zb9p-NkY_mHO8q78qJIXOMFb-CQ%3D%3D" style=3D"display:block;=
+ line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mo=
+de:bicubic; border:0 none; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">Legion 5i Gen 10 (15=
+&quot; Intel)...</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">1388<span> personas viendo &=
+#128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyNbpw6Y0V3e0N7tGzVPrskIFL4lLlF7dlihSuqChS0CEw/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h29/h001.1k6qa1EQtcPSylTJ4gnChGEgG8q3BpRP6QPByHkhUbU=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+<table align=3D"left" cellpadding=3D"0" class=3D"gi" width=3D"198" role=3D"=
+presentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; float:left"><tr><td class=3D"pc" style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"cent=
+er" width=3D"198" class=3D"p" cellspacing=3D"0" cellpadding=3D"0" border=3D=
+"0" role=3D"presentation" style=3D"border-collapse:collapse; mso-table-lspa=
+ce:0pt; mso-table-rspace:0pt">
+<tr><td align=3D"center" style=3D"border-collapse:collapse; mso-table-lspac=
+e:0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u=
+001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyOKJmYS2s6mp-4DkRYMTaIMASjKKfj=
+Rg5A-VThEa5foWA/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h30/h001.XpPzQ8r-Xg1Kb1421R0MKu4=
+1bqj6893LkTB_iakgVHM" target=3D"_blank"><img width=3D"160" class=3D"flex-im=
+age" alt=3D"ThinkPad E16 Gen 3 (16&quot; Intel)" src=3D"https://bluecore-im=
+age.bluecore.app/api/v1/image/resize/lenovo_co?url_safe_b64_image_url=3DaHR=
+0cHM6Ly9wMy1vZnAuc3RhdGljLnB1Yi8vZmVzL2Ntcy8yMDI1LzAzLzE5L3dkZjdqMWM2aTQ1OG=
+9rZXcweDN4a3Y3aTYxa25vZTMyNzc2MC5wbmc%3D&amp;width=3D160&amp;height=3D160&a=
+mp;fill_color=3Dwhite&amp;s=3DiEJzpvbvfIdx8gOBB8hmOsp539kLjGBo51noON5dKhbcZ=
+BaFXNXDeSu7swl8IbCoKedjUa0VcHD4mlqGcvqZ5H8qvUxASG07bBKi37ezZ2sy4Nb7arzm0oEK=
+LPiTi-Vuw-P_k56aW4pduVODINX9aDKE463xu8ASGIBKBr4vnBDYlM0AZcyYbW_LtlY8I4Y2JVG=
+O6EBsgdY2fGBA7F8Nfg%3D%3D" style=3D"display:block; line-height:100%; text-d=
+ecoration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none=
+; height:160px" height=3D"160"></a></td></tr>
+<tr><td class=3D"pd" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt; padding:0px 3px 10px 3px"><table align=3D"center" =
+class=3D"aw" width=3D"192" cellpadding=3D"0" role=3D"presentation" style=3D=
+"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt">
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa name" align=3D"center" valign=3D"top" style=3D"border-c=
+ollapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; height:36px" =
+height=3D"36"><p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:non=
+e; font-weight:bold; line-height:18px; width:192px; height:36px; display:bl=
+ock; font-family:'Montserrat Bold', Arial, Helvetica, sans-serif; font-size=
+:16px; letter-spacing:0em" width=3D"192" height=3D"36">ThinkPad E16 Gen 3 (=
+16&quot; Intel)</p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td height=3D"5" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa parent_viewed_product_7_day" align=3D"center" valign=3D=
+"top" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rs=
+pace:0pt; height:36px; padding-left:2px; padding-right:2px" height=3D"36"><=
+p style=3D"margin:0 auto; color:#4A4A4A; text-decoration:none; font-weight:=
+bold; line-height:18px; width:182px; height:36px; display:block; font-famil=
+y:'Montserrat Regular', Arial, Helvetica, sans-serif; font-size:15px; lette=
+r-spacing:-0.03em" width=3D"182" height=3D"36">330<span> personas viendo &#=
+128064;</span></p></td></tr>
+<tr><td height=3D"14" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+<tr><td class=3D"pa buy_now" align=3D"center" valign=3D"top" style=3D"borde=
+r-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><table ali=
+gn=3D"center" class=3D"cta" cellspacing=3D"0" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"mso-table-lspace:0pt; mso-table-rspace:0pt; border-coll=
+apse:initial"><tr><td class=3D"ctac" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; text-align:center; background-colo=
+r:#000000; border:1px solid #FFFFFF; border-radius:70px; font-size:16px; ms=
+o-line-height-rule:exactly; line-height:16px; letter-spacing:0em; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif" align=3D"center" =
+bgcolor=3D"#000000">
+<!--[if (gte mso 9)|(IE)]><table width=3D"100%"align=3D"center"cellpadding=
+=3D"0"cellspacing=3D"0"border=3D"0"role=3D"presentation"><tr><td width=3D"1=
+2"height=3D"40"style=3D"display:none;"class=3D"mso-only">&nbsp;</td><td><![=
+endif]--><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-=
+6SK_bdFIV-ttFtuFoQT3R5LpqyOdI346tg9e0NSJnEwOEsDMjHQxERUStDk8O70e5j0Qew/4us/=
+4Qbi6Da9Rk6YMnkVgJHrXA/h31/h001.bYPt_liwZXIH8EdRmmXpil6tbJiE-1ofUng4Y45takc=
+" target=3D"_blank" style=3D"text-decoration:none; color:#FFFFFF; font-fami=
+ly:'Gotham Book Semi Bold', Helvetica, Arial, sans-serif; display:block; fo=
+nt-size:16px; text-align:center; border-radius:70px; border-top:12px solid =
+#000000; border-bottom:12px solid #000000; border-left:24px solid #000000; =
+border-right:24px solid #000000; letter-spacing:0em" align=3D"center">Compr=
+ar</a><!--[if (gte mso 9)|(IE)]></td><td width=3D"12"style=3D"display:none;=
+"class=3D"mso-only">&nbsp;</td></tr></table><![endif]-->
+</td></tr></table></td></tr>
+<tr><td height=3D"15" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"></td></tr>
+</table></td></tr>
+</table></td></tr></table>
+</td></tr></table>
+<!-- end grid layout --> <!-- text --><!----><table bgcolor=3D"transparent"=
+ class=3D"row" id=3D"widget_aaf191ba3408391f063aa67c1a0b31f2" width=3D"600"=
+ align=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-con=
+text-id=3D"t6358073757392896gw6255184321601536lw4714592009969664" add-link-=
+instances=3D"True" role=3D"presentation" style=3D"border-collapse:collapse;=
+ mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td class=3D"widget_top_bo=
+ttom_padding" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-=
+table-rspace:0pt; padding-top:50px; padding-bottom:20px"><table class=3D"co=
+l-12" width=3D"600" align=3D"left" cellspacing=3D"0" cellpadding=3D"0" bord=
+er=3D"0" style=3D"border-collapse:collapse; mso-table-lspace:0; mso-table-r=
+space:0; border-left:1px; border-right:1px" role=3D"presentation"><tr><td s=
+tyle=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0p=
+t"><table class=3D"block-content" width=3D"100%" align=3D"center" cellspaci=
+ng=3D"0" cellpadding=3D"0" border=3D"0" role=3D"presentation" style=3D"bord=
+er-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100=
+%; text-align:center"><tr><td align=3D"center" style=3D"border-collapse:col=
+lapse; mso-table-lspace:0pt; mso-table-rspace:0pt; font-size:26px; line-hei=
+ght:18px; letter-spacing:0.0em; text-transform:none; padding-left:0px; padd=
+ing-right:0px"><p style=3D"margin:0 !important; text-align:center; color:#4=
+e444e" align=3D"center"><span style=3D"font-family: 'Montserrat Bold', Aria=
+l, Helvetica, sans-serif; color: #4e444e;"><strong><span style=3D"text-alig=
+n: center; text-decoration: none;">Compra por categor&iacute;a</span></stro=
+ng></span></p></td></tr></table></td></tr></table></td></tr></table>
+<!-- end text --> <!-- button pair --><!----><table class=3D"ev" bgcolor=3D=
+"#ffffff" id=3D"widget_8499b2ee051bcee0fb8838e7739c364c" width=3D"600" alig=
+n=3D"center" link-context-id=3D"t6358073757392896gw6255184321601536lw584049=
+1916812288" add-link-instances=3D"True" cellpadding=3D"0" role=3D"presentat=
+ion" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rsp=
+ace:0pt"><tr><td class=3D"mc" style=3D"border-collapse:collapse; mso-table-=
+lspace:0pt; mso-table-rspace:0pt; padding:10px 20px 10px 20px"><table class=
+=3D"bp" width=3D"550" align=3D"center" cellpadding=3D"0" role=3D"presentati=
+on" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspa=
+ce:0pt"><tr>
+<td width=3D"170" class=3D"c left_button" style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collap=
+se:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D"c=
+enter" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.=
+6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyP0rpLDatNOEADxmFwworo5BCDUCvWZ30-=
+Z-6AsdmlDYQ/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h32/h001.W1TtEzEfom1KivqTq_3CcM3URf8=
+HY_37sPB3suakTrg" target=3D"_blank"><img src=3D"https://partner-images.blue=
+core.com/lenovo_us/lenovo-laptops-con-es.png" alt=3D"Port&aacute;tiles" wid=
+th=3D"170" style=3D"display:block; height:auto; line-height:100%; text-deco=
+ration:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" h=
+eight=3D"auto"></a></td></tr></table></td>
+<td class=3D"sbe" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt; width:20px" width=3D"20"></td>
+<td width=3D"170" class=3D"c right_button" style=3D"border-collapse:collaps=
+e; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-colla=
+pse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D"=
+center" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001=
+.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyP_SZJW55zGkBfQxc6iBHqsHtpvR-Jqj-=
+sS35njSLpZBA/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h33/h001.FyfNPE1mqyK74PO1uBAP91M-vP=
+K9EsFdfFo0wqkNfz4" target=3D"_blank"><img src=3D"https://partner-images.blu=
+ecore.com/lenovo_us/lenovo-desktops-con-gb-ie-de-at-chen-chde-nl-benl-pt.pn=
+g" alt=3D"Desktops" width=3D"170" style=3D"display:block; height:auto; line=
+-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bi=
+cubic; border:0 none" height=3D"auto"></a></td></tr></table></td>
+<td class=3D"sbe" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt; width:20px" width=3D"20"></td>
+<td width=3D"170" class=3D"c third_element" style=3D"border-collapse:collap=
+se; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-coll=
+apse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D=
+"center" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u00=
+1.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPC77_X7LLnBvJdqAaip6l-SQzZL4gCh=
+Phek7KL5J1RDg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h34/h001.zS5O-f1tYehNaTMKXW-mDdadi=
+nscRwFxgjFuyid7_lg" target=3D"_blank"><img src=3D"https://partner-images.bl=
+uecore.com/lenovo_us/lenovo-tablets-con-gb-ie-de-at-chen-chde-dk-nl-benl-es=
+-pt.png" alt=3D"Tablets" width=3D"170" style=3D"display:block; height:auto;=
+ line-height:100%; text-decoration:none; outline:none; -ms-interpolation-mo=
+de:bicubic; border:0 none" height=3D"auto"></a></td></tr></table></td>
+</tr></table></td></tr></table>
+<!-- end button pair --> <!-- button pair --><!----><table class=3D"ev" bgc=
+olor=3D"#ffffff" id=3D"widget_61142a90f0e8255dceef00e86b6bb18c" width=3D"60=
+0" align=3D"center" link-context-id=3D"t6358073757392896gw6255184321601536l=
+w5277541963390976" add-link-instances=3D"True" cellpadding=3D"0" role=3D"pr=
+esentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-ta=
+ble-rspace:0pt"><tr><td class=3D"mc" style=3D"border-collapse:collapse; mso=
+-table-lspace:0pt; mso-table-rspace:0pt; padding:10px 20px 30px 20px"><tabl=
+e class=3D"bp" width=3D"550" align=3D"center" cellpadding=3D"0" role=3D"pre=
+sentation" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-tab=
+le-rspace:0pt"><tr>
+<td width=3D"170" class=3D"c left_button" style=3D"border-collapse:collapse=
+; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cellp=
+adding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-collap=
+se:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D"c=
+enter" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:0p=
+t; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.=
+6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyOh4otqnCem0yeXS05j1OpBdv3V-MrNKOB=
+V3dmwIykvJQ/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h35/h001.QndtgaxjnT8F4QUt3ow8i-5nwqR=
+-kGluqMYCtfsr5fw" target=3D"_blank"><img src=3D"https://partner-images.blue=
+core.com/lenovo_us/lenovo-monitors-con-es.png" alt=3D"Monitores" width=3D"1=
+70" style=3D"display:block; height:auto; line-height:100%; text-decoration:=
+none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" height=
+=3D"auto"></a></td></tr></table></td>
+<td class=3D"sbe" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt; width:20px" width=3D"20"></td>
+<td width=3D"170" class=3D"c right_button" style=3D"border-collapse:collaps=
+e; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cell=
+padding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-colla=
+pse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D"=
+center" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:0=
+pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001=
+.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyOzcfz9A3opqEr0D8EQ0OjNvivFHxha-6=
+T1LCEonJpYHg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h36/h001.IKZfTESsL-nvNDX-waJYhcA80B=
+6QmQI-UTaenhDMHbk" target=3D"_blank"><img src=3D"https://partner-images.blu=
+ecore.com/lenovo_us/lenovo-accessories-con-es.png" alt=3D"Accesorios" width=
+=3D"170" style=3D"display:block; height:auto; line-height:100%; text-decora=
+tion:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" hei=
+ght=3D"auto"></a></td></tr></table></td>
+<td class=3D"sbe" style=3D"border-collapse:collapse; mso-table-lspace:0pt; =
+mso-table-rspace:0pt; width:20px" width=3D"20"></td>
+<td width=3D"170" class=3D"c third_element" style=3D"border-collapse:collap=
+se; mso-table-lspace:0pt; mso-table-rspace:0pt"><table align=3D"center" cel=
+lpadding=3D"0" cellspacing=3D"0" role=3D"presentation" style=3D"border-coll=
+apse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tr><td align=3D=
+"center" width=3D"170" style=3D"border-collapse:collapse; mso-table-lspace:=
+0pt; mso-table-rspace:0pt"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u00=
+1.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPpd_HYZigBx-hf4A9FRIiIYZ8fFJZV9=
+-K_WbgNv0ysMg/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h37/h001.F0Oa0WiKXl4b2U3c48eqsxYEP=
+QX3RG6yHEIsjO5cYNE" target=3D"_blank"><img src=3D"https://partner-images.bl=
+uecore.com/lenovo_us/lenovo-con-services-las.png" alt=3D"Servicios" width=
+=3D"170" style=3D"display:block; height:auto; line-height:100%; text-decora=
+tion:none; outline:none; -ms-interpolation-mode:bicubic; border:0 none" hei=
+ght=3D"auto"></a></td></tr></table></td>
+</tr></table></td></tr></table>
+<!-- end button pair --> <!-- social --><!----><table id=3D"widget_2d022c18=
+9a361544d31106db89694db3" class=3D"row" bgcolor=3D"#ffffff" width=3D"600" a=
+lign=3D"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-conte=
+xt-id=3D"t6358073757392896gw4901149564583936lw5275277458661376" add-link-in=
+stances=3D"True" role=3D"presentation" style=3D"border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt"><tr><td style=3D"border-collapse=
+:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; padding-top:50px; pa=
+dding-bottom:42px"><table align=3D"center" cellspacing=3D"0" cellpadding=3D=
+"0" border=3D"0" role=3D"presentation" style=3D"border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt"><tr>
+<td align=3D"center" valign=3D"middle" width=3D"46" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href=3D"https://=
+trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyON=
+TKj1pGDpB7z8-oAypEXm9FY81Mvil-aMxYLm9JXBmw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h38/h=
+001.E4dhR_QAX3md5QVyCWTl8VOwZftdPSTsenWD4tqNvyQ" target=3D"_blank"><img alt=
+=3D"Facebook" src=3D"https://partner-images.bluecore.com/lenovo_cl/facebook=
+.png" width=3D"30" border=3D"0" style=3D"display:block; height:auto; line-h=
+eight:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicu=
+bic; border:0 none" height=3D"auto"></a></td>
+<td align=3D"center" valign=3D"middle" width=3D"46" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href=3D"https://=
+trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyN4=
+9LhVYR6RZXc_5cjsto96Ye4QH4GckjLDYHYY862L0A/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h39/h=
+001.su7iLkqFMA2tcQZFti-4Xul3c3ZcBbfRjRAgm6WsoAs" target=3D"_blank"><img alt=
+=3D"Twitter" src=3D"https://partner-images.bluecore.com/lenovo_cl/twitter.p=
+ng" width=3D"30" border=3D"0" style=3D"display:block; height:auto; line-hei=
+ght:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubi=
+c; border:0 none" height=3D"auto"></a></td>
+<td align=3D"center" valign=3D"middle" width=3D"46" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href=3D"https://=
+trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyPY=
+qttPI7-J2G48lOSpk2pWvjDJ1dBWuxPRGC_ZNwrNvw/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h40/h=
+001.lRQNWK7LaHfVBatnvPW0MnmmsTA9t_1MlIpr9lMAHUU" target=3D"_blank"><img alt=
+=3D"YouTube" src=3D"https://partner-images.bluecore.com/lenovo_cl/youtube.p=
+ng" width=3D"30" border=3D"0" style=3D"display:block; height:auto; line-hei=
+ght:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bicubi=
+c; border:0 none" height=3D"auto"></a></td>
+<td align=3D"center" valign=3D"middle" width=3D"46" style=3D"border-collaps=
+e:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><a href=3D"https://=
+trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyMz=
+XrNMQ4NFsJQr7uQjQmB5uAvWwuI7aihhG4Vyd4kpuQ/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h41/h=
+001.B6XssM4v4hLmr5nTun2YOdDI9iXxkTMfr8lAOEfyDXY" target=3D"_blank"><img alt=
+=3D"Instagram" src=3D"https://partner-images.bluecore.com/lenovo_cl/instagr=
+am.png" width=3D"30" border=3D"0" style=3D"display:block; height:auto; line=
+-height:100%; text-decoration:none; outline:none; -ms-interpolation-mode:bi=
+cubic; border:0 none" height=3D"auto"></a></td>
+</tr></table></td></tr></table>
+<!-- end social --> <!-- text --><!----><table bgcolor=3D"#ffffff" class=3D=
+"row" id=3D"widget_5385da0d7bcab22d452f15b0708cc316" width=3D"600" align=3D=
+"center" cellspacing=3D"0" cellpadding=3D"0" border=3D"0" link-context-id=
+=3D"t6358073757392896gw4901149564583936lw6401177365504000" add-link-instanc=
+es=3D"True" role=3D"presentation" style=3D"border-collapse:collapse; mso-ta=
+ble-lspace:0pt; mso-table-rspace:0pt"><tr><td class=3D"widget_top_bottom_pa=
+dding" style=3D"border-collapse:collapse; mso-table-lspace:0pt; mso-table-r=
+space:0pt; padding-top:0px; padding-bottom:23px"><table class=3D"col-12" wi=
+dth=3D"600" align=3D"left" cellspacing=3D"0" cellpadding=3D"0" border=3D"0"=
+ style=3D"border-collapse:collapse; mso-table-lspace:0; mso-table-rspace:0;=
+ border-left:1px; border-right:1px" role=3D"presentation"><tr><td style=3D"=
+border-collapse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt"><tabl=
+e class=3D"block-content" width=3D"100%" align=3D"center" cellspacing=3D"0"=
+ cellpadding=3D"0" border=3D"0" role=3D"presentation" style=3D"border-colla=
+pse:collapse; mso-table-lspace:0pt; mso-table-rspace:0pt; width:100%; text-=
+align:center"><tr><td align=3D"center" style=3D"border-collapse:collapse; m=
+so-table-lspace:0pt; mso-table-rspace:0pt; font-size:12px; line-height:15px=
+; letter-spacing:0.0em; text-transform:none; padding-left:73px; padding-rig=
+ht:73px">
+<p style=3D"margin:0 !important; text-align:center" align=3D"center"><span =
+style=3D"font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;">=
+<span style=3D"color: #555555;"><br>Est&aacute; suscrito como miguel.acero-=
+l@mail.escuelaing.edu.co. Para asegurarte de recibir los mails de ofertas d=
+e Lenovo en tu bandeja de entrada, por favor agreg&aacute; a tu lista de di=
+recciones el siguiente correo <a href=3D"mailto:lenovo@ecomm.lenovo.com" ta=
+rget=3D"_blank" rel=3D"noopener" title=3D"New" style=3D"text-decoration:inh=
+erit !important"><span style=3D"color: #555555;">lenovo@ecomm.lenovo.com</s=
+pan></a>. Las im&aacute;genes de los productos de este correo son meramente=
+ ilustrativas.</span></span></p>
+<p style=3D"margin:0 !important; text-align:center" align=3D"center">&nbsp;=
+</p>
+<p style=3D"margin:0 !important; text-align:center" align=3D"center"><span =
+style=3D"font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;">=
+<span style=3D"color: #555555;">Marcas comerciales: Lenovo y el logo de Len=
+ovo, ThinkPad e IdeaPad son marcas registradas de Lenovo. Ultrabook, Celero=
+n, Celeron Inside, Core Inside, Intel, Intel Logo, Intel Atom, Intel Atom I=
+nside, Intel Core, Intel Inside, Intel Inside Logo, Intel vPro, Itanium, It=
+anium Inside, Pentium, Pentium Inside, vPro Inside, Xeon, Xeon Phi y Xeon I=
+nside son marcas comerciales de la Corporaci&oacute;n Intel o sus filiales =
+en los Estados Unidos o en otros pa&iacute;ses.</span><span style=3D"color:=
+ #555555;"><br><br><span style=3D"text-decoration: underline;"><span style=
+=3D"color: #0d5c91;"><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKY=
+Ut2SIpgt5g4-6SK_bdFIV-ttFtuFoQT3R5LpqyNpc48lllE38lcHV4n2_u3zpepvSVV4DBukb14=
+0vTWrMQ/4us/4Qbi6Da9Rk6YMnkVgJHrXA/h42/h001.0kVHHcE-_Fgob81Tjk_57hlVimAsMmr=
+sqCx1cFkQwqM" target=3D"_blank" rel=3D"noopener" style=3D"text-decoration:i=
+nherit !important"><span style=3D"color: #0d5c91; text-decoration: underlin=
+e;">Mi cuenta</span></a></span></span></span><span style=3D"color: #555555;=
+"> | <a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_=
+bdFIV-ttFtuFoQT3R5LpqyPsumXEzKKPIiz3qE23QnGmoiNkQj0MhI1r8uwmIn1gUw/4us/4Qbi=
+6Da9Rk6YMnkVgJHrXA/h43/h001.qF5iXUv4ma0sEt_cgO9ow9bBYfvznh2rBm3FRcJXoTk" ta=
+rget=3D"_blank" class=3D"unsub-link" rel=3D"noopener" style=3D"text-decorat=
+ion:inherit !important"><span style=3D"text-decoration: underline;"><span s=
+tyle=3D"color: #555555; text-decoration: underline;"><span style=3D"color: =
+#0d5c91; text-decoration: underline;">Desuscribirse</span></span></span></a=
+> |&nbsp;<span style=3D"text-decoration: underline; color: #0d5c91;"><a hre=
+f=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-ttFtu=
+FoQT3R5LpqyN2XsAh2bu7ZGBROi3tXcuQ__23uXuiNfSEh_Bw0vwRZg/4us/4Qbi6Da9Rk6YMnk=
+VgJHrXA/h44/h001.Qg5F3WrDjwhZASWPCCZsJ9NUg6JRopoX48wKzmhZBxk" target=3D"_bl=
+ank" rel=3D"noopener" title=3D"Privacy Policy" style=3D"color:#0d5c91; text=
+-decoration:underline">Privacidad</a></span> <span style=3D"color: #0d5c91;=
+">| </span><a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g=
+4-6SK_bdFIV-ttFtuFoQT3R5LpqyM8LyDC3CRDO0loDwd7urL-JogTwszdnCyZrgPqTr0Dgw/4u=
+s/4Qbi6Da9Rk6YMnkVgJHrXA/h45/h001.2IG67gT7AMTxJhQy5VlWPRD6-OZCXopVdPF0cO--t=
+uE" target=3D"_blank" rel=3D"noopener" style=3D"text-decoration:inherit !im=
+portant"><span style=3D"text-decoration: underline; color: #0d5c91;">Soport=
+e</span></a><br><br></span><span style=3D"color: #555555;">&copy; Lenovo 20=
+26. Todos los derechos reservados.</span></span><br><span style=3D"color: #=
+555555; font-family: 'Montserrat Regular', Arial, Helvetica, sans-serif;"><=
+a href=3D"https://trk.ecomm.lenovo.com/ss/c/u001.6mKYUt2SIpgt5g4-6SK_bdFIV-=
+ttFtuFoQT3R5LpqyO4_ygU_Py8-m-0Fev2yWc7-JTiPrZC0reAw5RWK46D2g/4us/4Qbi6Da9Rk=
+6YMnkVgJHrXA/h46/h001.kWu24-JT1amYyIgGLD8m0Jwbbmolf12-VTcqV4yao1o" target=
+=3D"_blank" rel=3D"noopener" title=3D"Address" style=3D"text-decoration:inh=
+erit !important; color:#555555">Calle 99 #14 - 49, Torre EAR | Piso 5, Bogo=
+t&aacute; &#8211; Colombia</a></span></p>
+</td></tr></table></td></tr></table></td></tr></table>
+<!-- end text --> </td></tr></table></td></tr></table>
+</body>
+</html>
