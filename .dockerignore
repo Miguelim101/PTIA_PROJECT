@@ -1,0 +1,7 @@
+.git
+.gitignore
+training/
+tests/
+docs/
+**/.venv
+**/__pycache__

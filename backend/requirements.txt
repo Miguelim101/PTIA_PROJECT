@@ -1,0 +1,56 @@
+# ==============================================================================
+# DEPENDENCIAS DEL BACKEND Y DICCIONARIO DE DATOS
+# ==============================================================================
+# DETALLE OBLIGATORIO DE LAS 28 COLUMNAS ESPERADAS POR EL MODELO (1x28):
+#
+# --- Peso Crítico (Infraestructura y Redirección) ---
+# 1. num_link_mismatch        : Enlaces engañosos (href != texto)
+# 2. spf_pass                 : Validación SPF
+# 3. dkim_pass                : Validación DKIM
+# 4. from_replyto_mismatch    : Discrepancia From vs Reply-To
+#
+# --- Peso Significativo (Estructura/Ofuscación) ---
+# 5. url_has_at_symbol        : URLs con símbolo @
+# 6. max_subdomains           : Máximo de subdominios en una URL
+# 7. has_form                 : Presencia de <form> en HTML
+# 8. has_ip_url               : URLs con direcciones IP
+# 9. url_shortener_count      : Uso de acortadores (bit.ly, etc.)
+# 10. from_free_domain        : Remitente usa correo gratuito
+# 11. risky_attachment        : Adjunto ejecutable/peligroso
+#
+# --- Peso Contextual (Cuantitativo/Semántico) ---
+# 12. body_length             : Longitud de caracteres del cuerpo
+# 13. uppercase_ratio         : Proporción de mayúsculas
+# 14. digits_ratio            : Proporción de dígitos
+# 15. urgency_words           : Conteo de palabras de urgencia
+# 16. sensitive_words         : Conteo de palabras sensibles/credenciales
+# 17. exclamation_count       : Conteo de exclamaciones
+# 18. image_count             : Conteo de imágenes
+# 19. num_urls                : Total de URLs
+# 20. num_distinct_domains    : Dominios distintos
+# 21. is_html                 : Presencia de HTML
+# 22. max_url_length          : Longitud máxima de URL
+# 23. num_attachments         : Cantidad de adjuntos
+# 24. has_auth_results        : Existencia de cabecera de autenticación
+# 25. num_received_hops       : Saltos de red
+# 26. display_name_mismatch   : Suplantación en el nombre visible
+# 27. generic_greeting        : Uso de saludos genéricos
+# 28. non_https_count         : URLs usando http inseguro
+# ==============================================================================
+
+# Core de API y Servidor Asíncrono
+fastapi
+uvicorn[standard]
+python-multipart
+
+# Machine Learning, Redes Neuronales y Preprocesamiento
+tensorflow
+scikit-learn
+numpy
+joblib
+
+# Análisis Estructural (HTML Parser)
+beautifulsoup4
+
+# Procesamiento de Datos Tabulares
+pandas

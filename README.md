@@ -5,6 +5,13 @@ Phising detection
 
 Este repositorio contiene el código fuente, los scripts de entrenamiento y la arquitectura de despliegue del **Detector de Phishing**, un proyecto desarrollado para la asignatura Principios de Inteligencia Artificial (PTIA).
 
+## Contexto del Proyecto
+
+El phishing es una técnica de ciberdelincuencia diseñada para robar información sensible engañando al usuario. Tradicionalmente, los servidores de correo usan "listas negras" o reglas estáticas para bloquear estos ataques, pero son ineficaces ante amenazas nuevas.
+
+Este proyecto resuelve ese problema implementando un modelo de **Inteligencia Artificial (Red Neuronal Artificial)**. En lugar de leer el texto del correo (lo cual requeriría IA generativa pesada y costosa), nuestro sistema analiza la **estructura técnica del correo** de manera instantánea y privada, extrayendo características numéricas que delatan el fraude.
+
+
 El sistema (SIDP) clasifica correos electrónicos crudos (`.eml`) como legítimos o maliciosos (*phishing*) utilizando un enfoque puramente predictivo que combina **Feature Engineering estructurado** y **Deep Learning**, sin depender de APIs de Inteligencia Artificial generativa externas.
 
 ---
@@ -109,6 +116,21 @@ El proyecto está listo para ejecutarse en cualquier entorno mediante Docker. No
 
 4.  **Acceder a la aplicación:**
     *   **Frontend (UI del SIDP):** Abre tu navegador en `http://localhost` (o el puerto configurado).
+
+        Una vez que Docker confirme que los contenedores están corriendo, **no necesitas conocimientos técnicos ni abrir herramientas de backend** para probar la inteligencia artificial.
+
+        1. **Abre tu navegador web** y dirígete a: `http://localhost`
+        2. Verás la interfaz gráfica del Sistema de Identificación de Phishing (SIDP).
+        3. **Tienes dos formas de usarlo:**
+        * **Análisis Singular:** 
+            1. Haz clic en "Seleccionar Archivo" en la tarjeta izquierda.
+            2. Sube un archivo de correo crudo en formato `.eml` (puedes descargar uno real desde Gmail seleccionando "Descargar mensaje").
+            3. Haz clic en "Procesar Archivo". Verás cómo la interfaz muestra el *Score de Riesgo* y te alerta visualmente si es phishing o legítimo.
+        * **Análisis Masivo (Lotes):** 
+            1. Haz clic en la tarjeta derecha.
+            2. Sube un archivo comprimido `.zip` que contenga varios archivos `.eml`.
+            3. El sistema procesará todos a la vez y te entregará un resumen detallado con la opción de descargar los resultados en Excel/CSV.
+
     *   **Backend / Documentación de API (Swagger):** Navega a `http://localhost:8000/docs` para probar los *endpoints* interactivos autogenerados por FastAPI.
 
 5.  **Detener el sistema:**
