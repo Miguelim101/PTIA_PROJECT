@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIDP - Sistema de Identificación de Phishing</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#e9ecef;color:#333;min-height:100vh}
+.header{background:#1a233a;color:#fff;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10;box-shadow:0 2px 10px rgba(0,0,0,.15)}
+.header b{font-size:1.2rem;letter-spacing:.5px}
+.header span{font-size:.85rem;color:#adb5bd}
+main{max-width:1100px;margin:0 auto;padding:40px 20px}
+.view{display:flex;flex-direction:column;gap:20px}
+.hidden{display:none!important}
+.section-title{font-size:.85rem;text-transform:uppercase;color:#6c757d;font-weight:700}
+.panel{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.col{display:flex;flex-direction:column;gap:12px}
+.drop-zone{border:2px dashed #adb5bd;border-radius:12px;padding:50px 20px;text-align:center;background:#f8f9fa;cursor:pointer;transition:background .3s}
+.drop-zone:hover,.drop-zone.over{background:#e9ecef}
+.dz-icon{font-size:3rem}
+.dz-title{font-weight:700;font-size:1.05rem;margin-top:8px;color:#212529}
+.dz-sub{font-size:.85rem;color:#6c757d;margin:4px 0 16px}
+.btn{display:inline-block;background:#0d6efd;color:#fff;text-align:center;padding:12px 24px;border-radius:10px;font-weight:600;text-transform:uppercase;font-size:.85rem;letter-spacing:.5px;box-shadow:0 4px 10px rgba(13,110,253,.3);cursor:pointer;border:0}
+.btn.secondary{background:#6c757d;box-shadow:0 4px 10px rgba(108,117,125,.3)}
+.btn.success{background:#198754;box-shadow:0 4px 10px rgba(25,135,84,.3)}
+.actions{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap}
+.threat-error{color:#dc3545;font-size:.9rem;text-align:center;min-height:1.2em}
+.processing{align-items:center;justify-content:center;text-align:center;min-height:50vh}
+.spinner{width:70px;height:70px;border:6px solid #e9ecef;border-top-color:#0d6efd;border-radius:50%;margin:0 auto 20px;animation:spin 1s linear infinite}
+@keyframes spin{100%{transform:rotate(360deg)}}
+.alert-box{background:#fff5f5;border:2px solid #dc3545;border-radius:12px;padding:25px;text-align:center}
+.alert-box.safe{background:#f1fbf5;border-color:#198754}
+.alert-title{color:#dc3545;font-weight:800;font-size:1.4rem;margin-bottom:5px}
+.alert-box.safe .alert-title{color:#198754}
+.alert-label{color:#6c757d;font-size:.9rem;margin-top:10px}
+.alert-metric{font-size:2.8rem;font-weight:900;color:#212529}
+.data-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px;background:#fff;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.data-item{font-size:.8rem;display:flex;flex-direction:column}
+.data-label{color:#6c757d;font-weight:600;margin-bottom:2px}
+.data-value{font-weight:700;color:#212529;font-size:.95rem;word-break:break-all}
+.summary{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:start}
+.stats-row{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.stat-box{background:#fff;padding:20px;border-radius:12px;text-align:center;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.stat-number{font-size:2.2rem;font-weight:800;margin-top:5px}
+.danger-text{color:#dc3545}
+.threat-list{display:flex;flex-direction:column;gap:10px}
+.threat-item{background:#fff;border-left:4px solid #dc3545;padding:12px 16px;border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.06);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.threat-info{display:flex;flex-direction:column;min-width:0}
+.threat-domain{font-weight:700;font-size:.9rem;color:#212529;word-break:break-all}
+.threat-id{font-size:.75rem;color:#6c757d}
+.threat-badge{background:#212529;color:#fff;padding:4px 8px;border-radius:4px;font-size:.7rem;font-weight:700;letter-spacing:.5px}
+.ellipsis-text{font-size:.8rem;color:#6c757d;text-align:center}
+.footnote{text-align:center}
+.footnote b{display:block;color:#6c757d;font-size:.85rem;text-transform:uppercase}
+.footnote span{font-size:.8rem;color:#adb5bd}
+@media(max-width:800px){.two-col,.summary{grid-template-columns:1fr}.header{padding:16px 20px}}
+</style>
+</head>
+<body>
+
+<div class="header"><b>SIDP · Sistema de Identificación de Phishing</b><span id="hdr">Fuente de Datos</span></div>
+
+<main>
+<!-- ENTRADA -->
+<section class="view" id="v-input">
+  <div class="two-col">
+    <div class="col">
+      <div class="section-title">Análisis Singular</div>
+      <div class="drop-zone" id="dz-single">
+        <div class="dz-icon">📧</div>
+        <div class="dz-title">Cargar Archivo .EML</div>
+        <div class="dz-sub">Arrastra un correo crudo aquí</div>
+        <div class="btn">Seleccionar Archivo</div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section-title">Análisis Masivo (Por Lotes)</div>
+      <div class="drop-zone" id="dz-batch">
+        <div class="dz-icon">🗂️</div>
+        <div class="dz-title">Cargar Archivo .ZIP</div>
+        <div class="dz-sub">Lote comprimido de archivos .eml</div>
+        <div class="btn secondary">Procesar Lote</div>
+      </div>
+    </div>
+  </div>
+  <input type="file" id="in-single" accept=".eml" class="hidden">
+  <input type="file" id="in-batch" accept=".zip" class="hidden">
+  <div class="threat-error" id="err"></div>
+</section>
+
+<!-- PROCESAMIENTO -->
+<section class="view processing hidden" id="v-proc">
+  <div>
+    <div class="spinner"></div>
+    <h3 style="margin-bottom:10px;color:#212529">Extrayendo Características</h3>
+    <p style="color:#6c757d;line-height:1.4">Normalizando vector y ejecutando inferencia en <strong>Red Neuronal (MLP)</strong>...</p>
+  </div>
+</section>
+
+<!-- RESULTADO SINGULAR -->
+<section class="view hidden" id="v-single">
+  <div class="summary">
+    <div class="col">
+      <div class="section-title">Reporte de Amenaza</div>
+      <div class="alert-box" id="s-box">
+        <div class="alert-title" id="s-title"></div>
+        <div class="alert-label">Score de Riesgo (Sigmoid)</div>
+        <div class="alert-metric" id="s-score"></div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="section-title">Detalle</div>
+      <div class="data-grid" style="grid-template-columns:1fr 1fr">
+        <div class="data-item"><span class="data-label">Archivo Analizado</span><span class="data-value" id="s-file"></span></div>
+        <div class="data-item"><span class="data-label">Tiempo de Resp.</span><span class="data-value" id="s-time"></span></div>
+      </div>
+      <div class="footnote"><b>Clasificación Finalizada</b><span id="s-count"></span></div>
+    </div>
+  </div>
+  <div class="section-title">Métricas Extraídas</div>
+  <div class="data-grid" id="s-feats"></div>
+  <div class="actions">
+    <div class="btn secondary" data-reset>Nuevo Análisis</div>
+    <div class="btn success" id="s-csv">Descargar Matriz Resultante (.CSV)</div>
+  </div>
+</section>
+
+<!-- RESULTADO MASIVO -->
+<section class="view hidden" id="v-batch">
+  <div class="section-title">Resumen de Lote</div>
+  <div class="stats-row">
+    <div class="stat-box"><div class="data-label">Procesados</div><div class="stat-number" id="b-total"></div></div>
+    <div class="stat-box"><div class="data-label">Phishing</div><div class="stat-number danger-text" id="b-phish"></div></div>
+  </div>
+  <div class="section-title">Alertas Prioritarias</div>
+  <div class="threat-list" id="b-list"></div>
+  <div class="ellipsis-text" id="b-more"></div>
+  <div class="footnote"><b>Procesamiento Concurrente Finalizado</b><span id="b-time"></span></div>
+  <div class="actions">
+    <div class="btn secondary" data-reset>Nuevo Análisis</div>
+    <div class="btn success" id="b-csv">Exportar Dataset Etiquetado (.CSV)</div>
+  </div>
+</section>
+</main>
+
+<script>
+const API="/api",$=id=>document.getElementById(id);
+const VIEWS={"v-input":"Fuente de Datos","v-proc":"Procesamiento","v-single":"Resultado (Singular)","v-batch":"Resultado (Masivo)"};
+const TOP_N=10;
+let lastSingle=null,lastBatch=null;
+
+function show(id){
+  Object.keys(VIEWS).forEach(v=>$(v).classList.toggle("hidden",v!==id));
+  $("hdr").textContent=VIEWS[id];
+  window.scrollTo(0,0);
+}
+function fail(msg){show("v-input");$("err").textContent=msg}
+
+async function upload(endpoint,file){
+  $("err").textContent="";
+  show("v-proc");
+  const fd=new FormData();fd.append("file",file);
+  try{
+    const res=await fetch(`${API}/${endpoint}`,{method:"POST",body:fd});
+    const data=await res.json().catch(()=>({}));
+    if(!res.ok)throw new Error(data.detail||`Error HTTP ${res.status}`);
+    return data;
+  }catch(e){fail(e.message||"No se pudo conectar con el servidor");return null}
+}
+
+const pct=s=>(s*100).toFixed(1)+"%";
+const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
+
+function renderSingle(d){
+  lastSingle=d;
+  const ph=d.label==="phishing";
+  $("s-box").classList.toggle("safe",!ph);
+  $("s-title").textContent=ph?"¡PHISHING DETECTADO!":"CORREO LEGÍTIMO";
+  $("s-score").textContent=pct(d.score);
+  $("s-file").textContent=d.filename;
+  $("s-time").textContent=d.time_s+"s";
+  $("s-count").textContent=`${Object.keys(d.features).length} métricas extraídas exitosamente`;
+  const grid=$("s-feats");grid.replaceChildren();
+  for(const [k,v] of Object.entries(d.features)){
+    const it=el("div","data-item");
+    it.append(el("span","data-label",k),el("span","data-value",Number.isInteger(v)?v:Number(v).toFixed(4)));
+    grid.append(it);
+  }
+  show("v-single");
+}
+
+function renderBatch(d){
+  lastBatch=d;
+  const s=d.summary;
+  $("b-total").textContent=s.total.toLocaleString("es-CO");
+  $("b-phish").textContent=s.phishing.toLocaleString("es-CO");
+  $("b-time").textContent=`${s.time_s}s`+(s.errores?` · ${s.errores} con error`:"");
+  const ph=d.results.filter(r=>r.label==="phishing"),top=ph.slice(0,TOP_N);
+  const list=$("b-list");list.replaceChildren();
+  if(!top.length)list.append(el("div","ellipsis-text","Sin amenazas detectadas en el lote."));
+  top.forEach(r=>{
+    const row=el("div","threat-item"),info=el("div","threat-info");
+    info.append(el("span","threat-domain",r.filename),
+      el("span","threat-id",`Score: ${r.score.toFixed(3)}`+(r.score>=0.9?" | Detección Crítica":"")));
+    row.append(info,el("div","threat-badge","PHISHING"));
+    list.append(row);
+  });
+  const rest=ph.length-top.length;
+  $("b-more").textContent=rest>0?`${rest} correos adicionales clasificados como phishing`:"";
+  show("v-batch");
+}
+
+function downloadCSV(rows,name){
+  const cols=Object.keys(rows[0].features),esc=v=>`"${String(v).replace(/"/g,'""')}"`;
+  const lines=[["filename","score","label",...cols].join(",")];
+  rows.forEach(r=>lines.push([esc(r.filename),r.score,r.label,...cols.map(c=>r.features[c])].join(",")));
+  const url=URL.createObjectURL(new Blob(["\ufeff"+lines.join("\n")],{type:"text/csv;charset=utf-8"}));
+  const a=Object.assign(document.createElement("a"),{href:url,download:name});
+  document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
+}
+
+function bind(dzId,inId,endpoint,ext,render){
+  const dz=$(dzId),inp=$(inId);
+  const handle=async f=>{
+    if(!f)return;
+    if(!f.name.toLowerCase().endsWith(ext))return fail(`El archivo debe ser ${ext}`);
+    const data=await upload(endpoint,f);if(data)render(data);
+  };
+  dz.addEventListener("click",()=>inp.click());
+  inp.addEventListener("change",()=>{handle(inp.files[0]);inp.value=""});
+  dz.addEventListener("dragover",e=>{e.preventDefault();dz.classList.add("over")});
+  dz.addEventListener("dragleave",()=>dz.classList.remove("over"));
+  dz.addEventListener("drop",e=>{e.preventDefault();dz.classList.remove("over");handle(e.dataTransfer.files[0])});
+}
+
+bind("dz-single","in-single","evaluate-single",".eml",renderSingle);
+bind("dz-batch","in-batch","evaluate-batch",".zip",renderBatch);
+$("s-csv").addEventListener("click",()=>lastSingle&&downloadCSV([lastSingle],"sidp_resultado.csv"));
+$("b-csv").addEventListener("click",()=>lastBatch&&lastBatch.results.length&&downloadCSV(lastBatch.results,"sidp_lote_etiquetado.csv"));
+document.querySelectorAll("[data-reset]").forEach(b=>b.addEventListener("click",()=>{$("err").textContent="";show("v-input")}));
+</script>
+</body>
+</html>

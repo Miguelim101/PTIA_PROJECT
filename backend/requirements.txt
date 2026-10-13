@@ -43,14 +43,15 @@ fastapi
 uvicorn[standard]
 python-multipart
 
-# Machine Learning, Redes Neuronales y Preprocesamiento
-tensorflow
-scikit-learn
+# Machine Learning, Redes Neuronales y Preprocesamiento 
+# Temporalmnete coemntado para disminuir tiempo de ejecución sin backend
+#tensorflow
+#scikit-learn
 numpy
-joblib
+#joblib
 
 # Análisis Estructural (HTML Parser)
 beautifulsoup4
 
 # Procesamiento de Datos Tabulares
-pandas
+#pandas

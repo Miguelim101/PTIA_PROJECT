@@ -65,7 +65,7 @@ PTIA_PROJECT/
 │   ├── generate_dataset.py  # Construye el CSV iterando sobre los datasets crudos
 │   └── train_ann.py         # Script de entrenamiento: ajusta la red, el scaler y exporta
 ├── tests/                   # Pruebas automatizadas del extractor y endpoints
-├── docker-compose.yml       # Orquestador principal de contenedores
+├── docker-compose.yml       # Orquestador  principal de contenedores
 ├── .env                     # Variables de entorno (puertos, configuraciones CORS)
 ├── .gitignore               # Exclusión de archivos locales para el repositorio Git
 └── .dockerignore            # Exclusión de carpetas pesadas (training/, tests/) para el build
@@ -110,7 +110,7 @@ El proyecto está listo para ejecutarse en cualquier entorno mediante Docker. No
 3.  **Construir y levantar los contenedores:**
     Abre una terminal en la raíz del proyecto (`PTIA_PROJECT/`) y ejecuta:
     ```bash
-    docker-compose up --build -d
+    docker compose up --build -d
     ```
     *(El parámetro `-d` levanta el servicio en segundo plano. Omítelo si deseas ver los logs en tiempo real).*
 
@@ -135,7 +135,7 @@ El proyecto está listo para ejecutarse en cualquier entorno mediante Docker. No
 
 5.  **Detener el sistema:**
     ```bash
-    docker-compose down
+    docker compose down
     ```
 
 ---

@@ -5,8 +5,6 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup  # Requiere: pip install beautifulsoup4
 import json
 
-
-
 def extract_email_features(eml_path):
     # 1. Leer y analizar el archivo .eml utilizando la política por defecto
     with open(eml_path, "rb") as file_handle:
