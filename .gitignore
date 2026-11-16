@@ -107,3 +107,8 @@ training/datasets/*
 !training/datasets/sources/
 !training/datasets/corpus_report.md
 *.mbox
+
+# Correos de ejemplo locales (personales): sirven para probar el modelo con correos propios
+# y nunca se suben. Las pruebas que los usan se omiten si la carpeta está vacía.
+tests/eml_files/
+tests/private/
