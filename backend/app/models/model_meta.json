@@ -1,0 +1,58 @@
+{
+  "features": [
+    "spf_pass",
+    "dkim_pass",
+    "url_has_at_symbol",
+    "max_subdomains",
+    "has_form",
+    "has_ip_url",
+    "url_shortener_count",
+    "from_free_domain",
+    "risky_attachment",
+    "body_length",
+    "uppercase_ratio",
+    "digits_ratio",
+    "urgency_words",
+    "sensitive_words",
+    "image_count",
+    "num_urls",
+    "num_distinct_domains",
+    "max_url_length",
+    "num_attachments",
+    "display_name_mismatch",
+    "generic_greeting",
+    "non_https_count"
+  ],
+  "log_features": [
+    "body_length",
+    "image_count",
+    "max_subdomains",
+    "max_url_length",
+    "non_https_count",
+    "num_attachments",
+    "num_distinct_domains",
+    "num_urls",
+    "sensitive_words",
+    "urgency_words",
+    "url_shortener_count"
+  ],
+  "threshold": 0.5,
+  "architecture": "22 -> 64 -> 32 -> 1 (ReLU, Dropout 0.3, L2 0.01, sigmoide)",
+  "metrics_test": {
+    "accuracy": 0.9466,
+    "precision": 0.9628,
+    "recall": 0.932,
+    "f1": 0.9472,
+    "auc": 0.9788,
+    "tn": 228,
+    "fp": 9,
+    "fn": 17,
+    "tp": 233
+  },
+  "trained_at": "2026-11-16T02:39:47",
+  "versions": {
+    "tensorflow": "2.21.0",
+    "keras": "3.15.1",
+    "scikit-learn": "1.9.1"
+  }
+}

@@ -1,0 +1,8 @@
+fecha,entradas,dropout,l2,lr,batch,epocas,mejor_epoca,umbral,val_f1,val_auc,test_accuracy,test_precision,test_recall,test_f1,test_auc,nota
+2026-11-16T00:05:57,27,0.3,0.0,0.001,32,28,3,0.61,0.9563,0.9818,0.9242,0.9019,0.9560,0.9282,0.9738,configuración inicial: sobreajuste (mejor época 3)
+2026-11-16T00:15:36,27,0.3,0.01,0.001,128,67,42,0.79,0.9637,0.9849,0.9221,0.9240,0.9240,0.9240,0.9738,L2 0.01 y lotes de 128 elegidos en validación (24 combinaciones x 3 semillas)
+2026-11-16T00:17:42,27,0.3,0.01,0.001,128,67,42,0.79,0.9637,0.9850,0.9201,0.9203,0.9240,0.9222,0.9736,extractor: correo interno de Exchange (AuthAs Internal) cuenta como autenticado
+2026-11-16T01:23:31,27,0.3,0.01,0.001,128,67,42,0.77,0.9676,0.9898,0.9221,0.9109,0.9400,0.9252,0.9766,"vocabulario: sin términos genéricos de pies legales en español (clave, tarjeta, datos personales, inmediat)"
+2026-11-16T02:10:31,22,0.3,0.01,0.001,128,199,174,0.71,0.9718,0.9925,0.9324,0.9222,0.9480,0.9349,0.9804,"22 entradas: sin num_link_mismatch, is_html, has_auth_results, exclamation_count, from_replyto_mismatch (análisis de importancia)"
+2026-11-16T02:30:52,22,0.3,0.01,0.001,128,258,233,0.36,0.9595,0.9930,0.9548,0.9634,0.9480,0.9556,0.9788,corpus sin correos de prueba (tests/eml_files) y con un generador aleatorio por fuente
+2026-11-16T02:39:47,22,0.3,0.01,0.001,128,258,233,0.5,0.9571,0.9930,0.9466,0.9628,0.9320,0.9472,0.9788,umbral fijo 0.5 (el máximo F1 en validación era inestable entre particiones)
