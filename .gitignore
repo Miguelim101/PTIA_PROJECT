@@ -1,5 +1,5 @@
 # ====================================================================
-# Sitemas Operativos y Editores (Visual Studio, VS Code, JetBrains)
+# Sistemas Operativos y Editores (Visual Studio, VS Code, JetBrains)
 # ====================================================================
 # Visual Studio
 .vs/
@@ -98,3 +98,12 @@ logs/
 *.pem
 *.key
 *.secret
+
+# ====================================================================
+# Corpus de correos (se reproduce con training/download_data.py y training/build_corpus.py)
+# Solo se versionan las listas de fuentes y el reporte agregado.
+# ====================================================================
+training/datasets/*
+!training/datasets/sources/
+!training/datasets/corpus_report.md
+*.mbox
