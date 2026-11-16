@@ -1,0 +1,13 @@
+# Dependencias del entorno de datos y entrenamiento (Python 3.12; no se instalan en el contenedor)
+beautifulsoup4==4.15.0
+numpy==2.5.5
+pandas==3.1.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+joblib==1.6.0
+tensorflow==2.21.0
+pytest==9.2.0
+# Pruebas de la API (tests/test_api.py)
+fastapi==0.163.1
+python-multipart==0.0.33
+httpx==0.28.1
