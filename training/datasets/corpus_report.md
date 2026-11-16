@@ -9,7 +9,6 @@ Parámetros: objetivo 2500 phishing y 2500 legítimos, máximo 2 correos por cam
 | nazario | phishing | 1809 | 13 | 0 | 4 | 6 | 0 | 171 | 38 | 0 | 0 | 28 | 1549 | 1395 | 1452 | 1250 |
 | phishing_pot | phishing | 12815 | 181 | 3 | 12 | 131 | 0 | 6520 | 1810 | 6 | 2313 | 58 | 1781 | 1304 | 1327 | 1250 |
 | personal | legitimate | 4859 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 4858 | 3519 | 2379 | 2379 |
-| grupo | legitimate | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 ## Composición del corpus seleccionado
 
@@ -81,4 +80,3 @@ Parámetros: objetivo 2500 phishing y 2500 legítimos, máximo 2 correos por cam
 - **nazario**: Nazario, J. Phishing Corpus (CC-BY-4.0). https://monkey.org/~jose/phishing/
 - **phishing_pot**: rf-peixoto. phishing_pot. https://github.com/rf-peixoto/phishing_pot
 - **personal**: Buzón de Gmail del autor del repositorio, no publicado.
-- **grupo**: Buzones de Gmail de los demás integrantes del grupo, no publicados.

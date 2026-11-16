@@ -40,20 +40,27 @@ SOURCES = [
     {
         "name": "personal",
         "label": 0,
-        "weight": 0.5,
+        "weight": 1.0,
         "path": RAW_DIR / "personal",
         "kind": "manual",  # Gmail: download_gmail.py, Google Takeout (.mbox) o "Descargar mensaje" (.eml)
         "citation": "Buzón de Gmail del autor del repositorio, no publicado.",
     },
-    {
-        "name": "grupo",
-        "label": 0,
-        "weight": 0.5,
-        "path": RAW_DIR / "grupo",  # una subcarpeta por integrante: raw/grupo/<nombre>/
-        "kind": "manual",
-        "citation": "Buzones de Gmail de los demás integrantes del grupo, no publicados.",
-    },
 ]
+
+# Correos legítimos de los demás integrantes: una subcarpeta por persona en raw/grupo/<nombre>/.
+# Cada integrante es una fuente con el mismo peso que el buzón personal, de modo que los legítimos
+# se reparten en partes iguales entre los buzones (lo que falte en uno se completa con los demás).
+GROUP_DIR = RAW_DIR / "grupo"
+if GROUP_DIR.exists():
+    for member in sorted(p for p in GROUP_DIR.iterdir() if p.is_dir() and not p.name.startswith(".")):
+        SOURCES.append({
+            "name": f"grupo_{member.name}",
+            "label": 0,
+            "weight": 1.0,
+            "path": member,
+            "kind": "manual",
+            "citation": f"Buzón del integrante {member.name}, no publicado.",
+        })
 
 # Etiquetas de Gmail (cabecera X-Gmail-Labels de Takeout) que NO se consideran legítimas
 EXCLUDED_GMAIL_LABELS = {"spam", "trash", "papelera", "sent", "enviados", "draft", "borradores", "chat"}
