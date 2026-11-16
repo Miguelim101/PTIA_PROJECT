@@ -14,7 +14,6 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
 .view{display:flex;flex-direction:column;gap:20px}
 .hidden{display:none!important}
 .section-title{font-size:.85rem;text-transform:uppercase;color:#6c757d;font-weight:700}
-.panel{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:25px}
 .col{display:flex;flex-direction:column;gap:12px}
 .drop-zone{border:2px dashed #adb5bd;border-radius:12px;padding:50px 20px;text-align:center;background:#f8f9fa;cursor:pointer;transition:background .3s}
@@ -55,7 +54,23 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
 .footnote{text-align:center}
 .footnote b{display:block;color:#6c757d;font-size:.85rem;text-transform:uppercase}
 .footnote span{font-size:.8rem;color:#adb5bd}
-@media(max-width:800px){.two-col,.summary{grid-template-columns:1fr}.header{padding:16px 20px}}
+.gauge{margin:18px auto 4px;max-width:360px;text-align:left}
+.gauge-track{position:relative;height:12px;border-radius:6px;background:linear-gradient(90deg,#198754 0%,#ffc107 60%,#dc3545 100%)}
+.gauge-mark{position:absolute;top:-6px;width:2px;height:24px;background:#212529}
+.gauge-needle{position:absolute;top:-5px;width:22px;height:22px;margin-left:-11px;border-radius:50%;background:#fff;border:4px solid #212529}
+.gauge-legend{display:flex;justify-content:space-between;font-size:.75rem;color:#6c757d;margin-top:8px}
+.reasons{display:flex;flex-direction:column;gap:8px;background:#fff;padding:16px 20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.reason{font-size:.9rem;color:#212529;padding-left:22px;position:relative;line-height:1.35}
+.reason::before{content:"⚠";position:absolute;left:0;color:#dc3545}
+.reasons.neutral .reason::before{content:"•";color:#6c757d}
+.reasons-note{font-size:.75rem;color:#6c757d}
+.stats-row.four{grid-template-columns:repeat(4,1fr)}
+.safe-text{color:#198754}
+.privacy{font-size:.8rem;color:#6c757d;text-align:center;line-height:1.4}
+.model-info{font-size:.75rem;color:#adb5bd;text-align:center}
+.threat-reason{font-size:.75rem;color:#495057}
+@media(max-width:800px){.two-col,.summary{grid-template-columns:1fr}.stats-row.four{grid-template-columns:1fr 1fr}.header{padding:16px 20px}
+.data-grid{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
@@ -88,6 +103,9 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
   <input type="file" id="in-single" accept=".eml" class="hidden">
   <input type="file" id="in-batch" accept=".zip" class="hidden">
   <div class="threat-error" id="err"></div>
+  <p class="privacy">🔒 Los correos se analizan en memoria y no se almacenan. El análisis usa solo la estructura del
+  correo (cabeceras, enlaces, adjuntos y palabras clave); no se envía a servicios externos.</p>
+  <p class="model-info" id="model-info"></p>
 </section>
 
 <!-- PROCESAMIENTO -->
@@ -103,11 +121,15 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
 <section class="view hidden" id="v-single">
   <div class="summary">
     <div class="col">
-      <div class="section-title">Reporte de Amenaza</div>
+      <div class="section-title">Reporte de Análisis</div>
       <div class="alert-box" id="s-box">
         <div class="alert-title" id="s-title"></div>
-        <div class="alert-label">Score de Riesgo (Sigmoid)</div>
+        <div class="alert-label">Score de riesgo del modelo (0 a 100)</div>
         <div class="alert-metric" id="s-score"></div>
+        <div class="gauge">
+          <div class="gauge-track"><div class="gauge-mark" id="s-mark"></div><div class="gauge-needle" id="s-needle"></div></div>
+          <div class="gauge-legend"><span>0 · legítimo</span><span id="s-threshold"></span><span>100 · phishing</span></div>
+        </div>
       </div>
     </div>
     <div class="col">
@@ -119,7 +141,9 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
       <div class="footnote"><b>Clasificación Finalizada</b><span id="s-count"></span></div>
     </div>
   </div>
-  <div class="section-title">Métricas Extraídas</div>
+  <div class="section-title" id="s-reasons-title"></div>
+  <div class="reasons" id="s-reasons"></div>
+  <div class="section-title">Características Extraídas</div>
   <div class="data-grid" id="s-feats"></div>
   <div class="actions">
     <div class="btn secondary" data-reset>Nuevo Análisis</div>
@@ -130,14 +154,16 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
 <!-- RESULTADO MASIVO -->
 <section class="view hidden" id="v-batch">
   <div class="section-title">Resumen de Lote</div>
-  <div class="stats-row">
+  <div class="stats-row four">
     <div class="stat-box"><div class="data-label">Procesados</div><div class="stat-number" id="b-total"></div></div>
     <div class="stat-box"><div class="data-label">Phishing</div><div class="stat-number danger-text" id="b-phish"></div></div>
+    <div class="stat-box"><div class="data-label">Legítimos</div><div class="stat-number safe-text" id="b-legit"></div></div>
+    <div class="stat-box"><div class="data-label">Con error</div><div class="stat-number" id="b-errors"></div></div>
   </div>
   <div class="section-title">Alertas Prioritarias</div>
   <div class="threat-list" id="b-list"></div>
   <div class="ellipsis-text" id="b-more"></div>
-  <div class="footnote"><b>Procesamiento Concurrente Finalizado</b><span id="b-time"></span></div>
+  <div class="footnote"><b>Procesamiento Finalizado</b><span id="b-time"></span></div>
   <div class="actions">
     <div class="btn secondary" data-reset>Nuevo Análisis</div>
     <div class="btn success" id="b-csv">Exportar Dataset Etiquetado (.CSV)</div>
@@ -149,7 +175,23 @@ main{max-width:1100px;margin:0 auto;padding:40px 20px}
 const API="/api",$=id=>document.getElementById(id);
 const VIEWS={"v-input":"Fuente de Datos","v-proc":"Procesamiento","v-single":"Resultado (Singular)","v-batch":"Resultado (Masivo)"};
 const TOP_N=10;
-let lastSingle=null,lastBatch=null;
+// Nombres legibles de las 28 características que calcula el extractor. Las que el modelo no usa se
+// marcan al mostrarlas, según la lista de /health
+const LABELS={num_link_mismatch:"Enlaces con texto engañoso",spf_pass:"SPF aprobado",dkim_pass:"DKIM aprobado",
+from_replyto_mismatch:"Reply-To a otro dominio",url_has_at_symbol:"URL con dominio falso antes de @",
+max_subdomains:"Máx. subdominios en una URL",has_form:"Formulario HTML",has_ip_url:"URL con dirección IP",
+url_shortener_count:"Acortadores de URL",from_free_domain:"Remitente con correo gratuito",
+risky_attachment:"Adjunto riesgoso",body_length:"Longitud del texto",uppercase_ratio:"Proporción de mayúsculas",
+digits_ratio:"Proporción de dígitos",urgency_words:"Palabras de urgencia",sensitive_words:"Palabras sensibles",
+exclamation_count:"Signos de exclamación",image_count:"Imágenes",num_urls:"URLs",num_distinct_domains:"Dominios distintos",
+is_html:"Correo HTML",max_url_length:"Longitud máx. de URL",num_attachments:"Adjuntos",
+has_auth_results:"Resultados de autenticación",num_received_hops:"Saltos Received",
+display_name_mismatch:"Nombre visible suplantado",generic_greeting:"Saludo genérico",non_https_count:"URLs sin HTTPS"};
+const BOOLEAN=new Set(["spf_pass","dkim_pass","from_replyto_mismatch","url_has_at_symbol","has_form","has_ip_url",
+"from_free_domain","risky_attachment","is_html","has_auth_results","display_name_mismatch","generic_greeting"]);
+let lastSingle=null,lastBatch=null,modelFeatures=null;
+const used=k=>!modelFeatures||modelFeatures.includes(k);
+const nModel=()=>modelFeatures?modelFeatures.length:"sus";
 
 function show(id){
   Object.keys(VIEWS).forEach(v=>$(v).classList.toggle("hidden",v!==id));
@@ -163,14 +205,21 @@ async function upload(endpoint,file){
   show("v-proc");
   const fd=new FormData();fd.append("file",file);
   try{
-    const res=await fetch(`${API}/${endpoint}`,{method:"POST",body:fd});
+    let res;
+    try{res=await fetch(`${API}/${endpoint}`,{method:"POST",body:fd})}
+    catch{throw new Error("No se pudo conectar con el servidor. Verifique que el backend esté en ejecución.")}
     const data=await res.json().catch(()=>({}));
-    if(!res.ok)throw new Error(data.detail||`Error HTTP ${res.status}`);
+    if(!res.ok)throw new Error(data.detail||(res.status===413?"El archivo supera el tamaño máximo permitido":`Error del servidor (HTTP ${res.status})`));
     return data;
-  }catch(e){fail(e.message||"No se pudo conectar con el servidor");return null}
+  }catch(e){fail(e.message);return null}
 }
 
-const pct=s=>(s*100).toFixed(1)+"%";
+// El score es la salida sigmoide del MLP en escala 0-100: no es una probabilidad calibrada,
+// por eso se muestra junto al umbral de decisión con el que se clasifica
+const pts=s=>(s*100).toFixed(1);
+// Enteros sin separador de miles: en es-CO "3.595" se confundiría con un decimal
+const fmt=(k,v)=>BOOLEAN.has(k)?(v?"Sí":"No"):Number.isInteger(v)?String(v):Number(v).toFixed(3);
+const secs=t=>t<0.01?"< 0.01 s":`${t} s`;
 const el=(tag,cls,txt)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e};
 
 function renderSingle(d){
@@ -178,14 +227,26 @@ function renderSingle(d){
   const ph=d.label==="phishing";
   $("s-box").classList.toggle("safe",!ph);
   $("s-title").textContent=ph?"¡PHISHING DETECTADO!":"CORREO LEGÍTIMO";
-  $("s-score").textContent=pct(d.score);
+  $("s-score").textContent=pts(d.score);
+  $("s-needle").style.left=`${Math.min(Math.max(d.score*100,2),98)}%`;
+  $("s-mark").style.left=`${d.threshold*100}%`;
+  $("s-threshold").textContent=`umbral ${pts(d.threshold)}`;
   $("s-file").textContent=d.filename;
-  $("s-time").textContent=d.time_s+"s";
-  $("s-count").textContent=`${Object.keys(d.features).length} métricas extraídas exitosamente`;
+  $("s-time").textContent=secs(d.time_s);
+  $("s-count").textContent=`${Object.keys(d.features).length} características extraídas · phishing desde ${pts(d.threshold)}`;
+  const box=$("s-reasons");box.replaceChildren();box.classList.toggle("neutral",!ph);
+  $("s-reasons-title").textContent=ph?"Indicadores de riesgo encontrados":"Indicadores encontrados";
+  if(d.reasons.length){
+    d.reasons.forEach(r=>box.append(el("div","reason",r)));
+    box.append(el("div","reasons-note",ph?`Los indicadores acompañan la decisión del modelo, que considera ${nModel()} características en conjunto.`
+      :`Estos indicadores aparecen también en correos legítimos; el modelo considera ${nModel()} características en conjunto.`));
+  }else box.append(el("div","reasons-note",ph?`No se encontraron indicadores puntuales; la decisión se basa en la combinación de ${nModel()} características.`
+    :"No se encontraron indicadores de riesgo."));
   const grid=$("s-feats");grid.replaceChildren();
   for(const [k,v] of Object.entries(d.features)){
-    const it=el("div","data-item");
-    it.append(el("span","data-label",k),el("span","data-value",Number.isInteger(v)?v:Number(v).toFixed(4)));
+    const it=el("div","data-item");it.title=k;
+    it.append(el("span","data-label",(LABELS[k]||k)+(used(k)?"":" (no usada por el modelo)")),el("span","data-value",fmt(k,v)));
+    if(!used(k))it.style.opacity=".55";
     grid.append(it);
   }
   show("v-single");
@@ -196,14 +257,17 @@ function renderBatch(d){
   const s=d.summary;
   $("b-total").textContent=s.total.toLocaleString("es-CO");
   $("b-phish").textContent=s.phishing.toLocaleString("es-CO");
-  $("b-time").textContent=`${s.time_s}s`+(s.errores?` · ${s.errores} con error`:"");
+  $("b-legit").textContent=s.legitimos.toLocaleString("es-CO");
+  $("b-errors").textContent=s.errores.toLocaleString("es-CO");
+  $("b-time").textContent=secs(s.time_s)+(d.errors.length?` · Con error: ${d.errors.map(e=>e.filename).join(", ")}`:"");
   const ph=d.results.filter(r=>r.label==="phishing"),top=ph.slice(0,TOP_N);
   const list=$("b-list");list.replaceChildren();
   if(!top.length)list.append(el("div","ellipsis-text","Sin amenazas detectadas en el lote."));
   top.forEach(r=>{
     const row=el("div","threat-item"),info=el("div","threat-info");
     info.append(el("span","threat-domain",r.filename),
-      el("span","threat-id",`Score: ${r.score.toFixed(3)}`+(r.score>=0.9?" | Detección Crítica":"")));
+      el("span","threat-id",`Score: ${pts(r.score)} / 100 (umbral ${pts(r.threshold)})`+(r.score>=0.95?" | Riesgo muy alto":"")));
+    if(r.reasons.length)info.append(el("span","threat-reason",r.reasons[0]));
     row.append(info,el("div","threat-badge","PHISHING"));
     list.append(row);
   });
@@ -214,8 +278,8 @@ function renderBatch(d){
 
 function downloadCSV(rows,name){
   const cols=Object.keys(rows[0].features),esc=v=>`"${String(v).replace(/"/g,'""')}"`;
-  const lines=[["filename","score","label",...cols].join(",")];
-  rows.forEach(r=>lines.push([esc(r.filename),r.score,r.label,...cols.map(c=>r.features[c])].join(",")));
+  const lines=[["filename","score","threshold","label","reasons",...cols].join(",")];
+  rows.forEach(r=>lines.push([esc(r.filename),r.score,r.threshold,r.label,esc(r.reasons.join(" | ")),...cols.map(c=>r.features[c])].join(",")));
   const url=URL.createObjectURL(new Blob(["\ufeff"+lines.join("\n")],{type:"text/csv;charset=utf-8"}));
   const a=Object.assign(document.createElement("a"),{href:url,download:name});
   document.body.append(a);a.click();a.remove();URL.revokeObjectURL(url);
@@ -239,6 +303,10 @@ bind("dz-single","in-single","evaluate-single",".eml",renderSingle);
 bind("dz-batch","in-batch","evaluate-batch",".zip",renderBatch);
 $("s-csv").addEventListener("click",()=>lastSingle&&downloadCSV([lastSingle],"sidp_resultado.csv"));
 $("b-csv").addEventListener("click",()=>lastBatch&&lastBatch.results.length&&downloadCSV(lastBatch.results,"sidp_lote_etiquetado.csv"));
+fetch(`${API}/health`).then(r=>r.ok?r.json():null).then(h=>{
+  if(h)modelFeatures=h.features;
+  if(h)$("model-info").textContent=`Modelo: MLP ${h.model.split(" (")[0]} · F1 en prueba ${h.metrics_test.f1.toFixed(3)} · AUC ${h.metrics_test.auc.toFixed(3)}`;
+}).catch(()=>{});
 document.querySelectorAll("[data-reset]").forEach(b=>b.addEventListener("click",()=>{$("err").textContent="";show("v-input")}));
 </script>
 </body>
